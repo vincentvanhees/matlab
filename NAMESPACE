@@ -1,0 +1,20 @@
+## Public routines
+export(ceil)
+export(eye)
+export(find)
+export(fix)
+export(mod)
+export(ones)
+export(rem)
+export(repmat)
+export(rot90)
+export(size)
+export(std)
+export(tic,toc)
+export(zeros)
+
+## S4 Methods
+exportMethods(fliplr)
+exportMethods(flipud)
+exportMethods(sum)
+
