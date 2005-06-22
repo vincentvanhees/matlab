@@ -14,7 +14,7 @@ fix(A)
    Simply invokes \code{base::trunc}.
 }
 \value{
-   Returns \code{vector} containing integers by truncating the
+   Returns vector containing integers by truncating the
    corresponding values of argument \code{A} toward zero.
 }
 \examples{

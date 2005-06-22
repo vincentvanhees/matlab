@@ -4,15 +4,16 @@
 \title{MATLAB timer functions}
 \description{
   Provides stopwatch timer. Function \code{tic} starts the timer and \code{toc}
-displays the elapsed time since the timer was started. 
+updates the elapsed time since the timer was started. 
 }
 \usage{
 tic(gcFirst = FALSE)
-toc()
+toc(echo = TRUE)
 }
 \arguments{
   \item{gcFirst}{logical. If \code{TRUE}, perform garbage collection prior
 to starting stopwatch}
+  \item{echo}{logical. If \code{TRUE}, print elapsed time to screen}
 }
 \details{
    Provides analog to \code{base::system.time}. Function \code{toc} can be

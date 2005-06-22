@@ -6,7 +6,7 @@
 ##-----------------------------------------------------------------------------
 std <- function(x, flag = 0) {
     if (flag != 0) {
-        stop('Biased standard deviation not implemented')
+        stop("biased standard deviation not implemented")
     }
     sd(x)
 }

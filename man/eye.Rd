@@ -11,7 +11,7 @@ eye(n, m = n)
   \item{n, m}{dimensions for the result}
 }
 \value{
-   Returns \code{matrix} of order 1.
+   Returns matrix of order 1.
    Defaults to square if second dimension argument \code{m} not provided.
 }
 \examples{

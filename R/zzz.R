@@ -15,9 +15,24 @@
 .onAttach <- function(libname, pkgname) {
     verbose <- getOption("verbose")
     if (verbose) {
-        cat("Matlab support package attached.",
-            "Type library(help='matlab') to see package documentation.",
-            sep="\n");
+        local({
+            libraryPkgName <- function(pkgname, sep = "_") {
+                unlist(strsplit(pkgname, sep, fixed = TRUE))[1]
+            }
+            packageDescription <- function(pkgname) {
+                fieldnames <- c("Title", "Version")
+                descfile <- file.path(libname, pkgname, "DESCRIPTION")
+                desc <- as.list(read.dcf(descfile, fieldnames))
+                names(desc) <- fieldnames
+                return(desc)
+            }
+
+            desc <- packageDescription(pkgname)
+            cat(paste(desc$Title, ", version ", desc$Version, sep = ""), "\n")
+            cat(paste("Type library(help=",
+                      sQuote(libraryPkgName(pkgname)),
+                      ") to see package documentation.", sep = ""), "\n")
+        })
     }
 }
 
@@ -25,6 +40,14 @@
 ##-----------------------------------------------------------------------------
 .onLoad <- function(libname, pkgname) {
     environment(.MatlabNamespaceEnv) <- asNamespace("matlab")
+
+    # Load internal variables
     assign("savedTime", 0, envir = .MatlabNamespaceEnv)
+
+    # Allow no changes or additions to environment
+    lockEnvironment(.MatlabNamespaceEnv, bindings = TRUE)
+
+    # Only allow internal vars to change
+    unlockBinding("savedTime", .MatlabNamespaceEnv)
 }
 

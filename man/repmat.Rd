@@ -12,8 +12,7 @@ repmat(A, m, n = if (length(m) == 1)m)
   \item{n, m}{dimensions for the result}
 }
 \value{
-   Returns \code{matrix} with value \code{A} tiled to the number of dimensions
-specified.
+   Returns matrix with value \code{A} tiled to the number of dimensions specified.
    Defaults to square if second dimension argument \code{n} not provided.
 }
 \examples{

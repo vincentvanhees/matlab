@@ -24,9 +24,8 @@ sum(x, na.rm = FALSE)
    This is an S4 generic function.
 }
 \value{
-   Return value depends on argument \code{x}. If \code{vector}, returns
-   the same as \code{base::sum}. If \code{matrix}, returns vector containing
-   the sum of each column.
+   Return value depends on argument \code{x}. If vector, returns the same as
+   \code{base::sum}. If matrix, returns vector containing the sum of each column.
 }
 \examples{
 sum(1:9)

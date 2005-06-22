@@ -15,7 +15,7 @@ rot90(A, k = 1)
    Rotating 4 times (360 degrees) returns the original matrix unchanged.
 }
 \value{
-   Returns \code{matrix} corresponding to argument \code{A} having been rotated
+   Returns matrix corresponding to argument \code{A} having been rotated
    argument \code{k} number of times.
 }
 \examples{

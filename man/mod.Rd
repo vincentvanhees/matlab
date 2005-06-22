@@ -13,7 +13,7 @@ rem(x, y)
   \item{x, y}{numeric vectors or objects}
 }
 \value{
-   Returns \code{vector} containing result of the element by element operations.
+   Returns vector containing result of the element by element operations.
 }
 \examples{
 # same results with x, y having the same sign

@@ -15,7 +15,7 @@ ceil(x)
 name.
 }
 \value{
-   Returns \code{vector} containing smallest integers not less than the
+   Returns vector containing smallest integers not less than the
    corresponding elements of argument \code{x}.
 }
 \examples{

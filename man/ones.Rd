@@ -13,7 +13,7 @@ zeros(n, m = n)
   \item{n, m}{dimensions for the result}
 }
 \value{
-   Returns \code{matrix} consisting only of ones (or zeros).
+   Returns matrix consisting only of ones (or zeros).
    Defaults to square if second dimension argument \code{m} not provided.
 }
 \examples{

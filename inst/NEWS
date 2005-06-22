@@ -1,0 +1,9 @@
+0.7-7:	Added 'pascal' method
+      	Added 'linspace' method
+      	Added 'logspace' method
+	Converted 'size' method to S4
+	Added 'dimen' parameter to 'size' method
+	Added 'echo' parameter to 'toc' method
+
+0.7-6:  Initial release to CRAN
+

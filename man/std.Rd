@@ -16,9 +16,9 @@ If \code{1}, selects biased algorithm (currently unsupported).}
    Simply invokes \code{stats::sd}.
 }
 \value{
-   Return value depends on argument \code{x}. If \code{vector}, returns
-   the standard deviation. If \code{matrix}, returns vector containing
-   the standard deviation of each column.
+   Return value depends on argument \code{x}. If vector, returns the
+   standard deviation. If matrix, returns vector containing the
+   standard deviation of each column.
 }
 \examples{
 std(1:2) ^ 2
