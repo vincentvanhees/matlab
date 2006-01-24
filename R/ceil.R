@@ -1,6 +1,6 @@
-#
-# CEIL.R - Rounds to the nearest integer
-#
+###
+### CEIL.R - Rounds to the nearest integer
+###
 
 
 ##-----------------------------------------------------------------------------

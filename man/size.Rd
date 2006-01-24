@@ -20,11 +20,13 @@ size(X, dimen)
   \item{dimen}{numeric scalar specifies particular dimension}
 }
 \details{
-   This is an S4 generic function.
-   Invokes \code{base::length} or \code{base::dim} depending on argument \code{X}.
+  This is an S4 generic function.
+  Invokes \code{\link[base]{length}} or \code{\link[base]{dim}} depending on
+  argument \code{X}.
 }
 \value{
-   Returns class \code{size_t} containing the dimensions of input argument.
+  Returns object of class \code{size_t} containing the dimensions of
+  input argument.
 }
 \examples{
 size(1:8)
@@ -32,5 +34,5 @@ size(matrix(1:8, 2, 4))
 size(matrix(1:8, 2, 4), 2)
 }
 \author{P. Roebuck, \email{roebuck@mdanderson.org}}
-\keyword{interface}
+\keyword{array}
 

@@ -18,19 +18,20 @@ sum(x, na.rm = FALSE)
 }
 \arguments{
   \item{x}{numeric to be summed}
-  \item{na.rm}{logical. If \code{TRUE}, remove missing values}
+  \item{na.rm}{logical scalar. If \code{TRUE}, remove missing values}
 }
 \details{
-   This is an S4 generic function.
+  This is an S4 generic function.
 }
 \value{
-   Return value depends on argument \code{x}. If vector, returns the same as
-   \code{base::sum}. If matrix, returns vector containing the sum of each column.
+  Return value depends on argument \code{x}. If vector, returns the same as
+  \code{\link[base]{sum}}. If matrix, returns vector containing the sum of
+  each column.
 }
 \examples{
 sum(1:9)
 sum(matrix(1:9, 3, 3))
 }
 \author{P. Roebuck, \email{roebuck@mdanderson.org}}
-\keyword{interface}
+\keyword{arith}
 

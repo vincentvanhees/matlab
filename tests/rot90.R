@@ -1,6 +1,6 @@
-#
-# ROT90.R
-#
+###
+### ROT90.R
+###
 
 test.rot90 <- function(input, expected) {
    identical(matlab::rot90(input$A, input$k), expected)

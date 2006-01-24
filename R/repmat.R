@@ -1,6 +1,6 @@
-#
-# REPMAT.R - Replicate and tile an array
-#
+###
+### REPMAT.R - Replicate and tile an array
+###
 
 
 ##-----------------------------------------------------------------------------

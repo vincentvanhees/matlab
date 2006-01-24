@@ -13,16 +13,16 @@ rem(x, y)
   \item{x, y}{numeric vectors or objects}
 }
 \value{
-   Returns vector containing result of the element by element operations.
+  Returns vector containing result of the element by element operations.
 }
 \examples{
-# same results with x, y having the same sign
+## same results with x, y having the same sign
 mod(5, 3)
 rem(5, 3)
-# same results with x, y having different signs
+## same results with x, y having different signs
 mod(-5, 3)
 rem(-5, 3)
 }
 \author{P. Roebuck, \email{roebuck@mdanderson.org}}
-\keyword{interface}
+\keyword{arith}
 

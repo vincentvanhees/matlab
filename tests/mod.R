@@ -1,6 +1,6 @@
-#
-# MOD.R
-#
+###
+### MOD.R
+###
 
 test.mod <- function(input, expected) {
     identical(matlab::mod(input$x, input$y), expected)

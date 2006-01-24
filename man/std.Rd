@@ -9,20 +9,20 @@ std(x, flag = 0)
 }
 \arguments{
   \item{x}{numeric vector or matrix}
-  \item{flag}{integer logical. If \code{0}, selects unbiased algorithm.
-If \code{1}, selects biased algorithm (currently unsupported).}
+  \item{flag}{numeric scalar. If \code{0}, selects unbiased algorithm.
+  If \code{1}, selects biased algorithm (currently unsupported).}
 }
 \details{
-   Simply invokes \code{stats::sd}.
+  Simply invokes \code{\link[stats]{sd}}.
 }
 \value{
-   Return value depends on argument \code{x}. If vector, returns the
-   standard deviation. If matrix, returns vector containing the
-   standard deviation of each column.
+  Return value depends on argument \code{x}. If vector, returns the
+  standard deviation. If matrix, returns vector containing the
+  standard deviation of each column.
 }
 \examples{
 std(1:2) ^ 2
 }
 \author{P. Roebuck, \email{roebuck@mdanderson.org}}
-\keyword{interface}
+\keyword{univar}
 

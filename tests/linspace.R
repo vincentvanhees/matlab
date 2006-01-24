@@ -1,6 +1,6 @@
-#
-# LINSPACE.R
-#
+###
+### LINSPACE.R
+###
 
 test.linspace <- function(input, expected) {
     if (length(input) == 2) {

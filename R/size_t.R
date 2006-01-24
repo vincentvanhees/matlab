@@ -1,6 +1,6 @@
-#
-# SIZE_T.R - Size class
-#
+###
+### SIZE_T.R - Size class
+###
 
 library(methods)
 
@@ -13,7 +13,7 @@ setClass("size_t",
 
 ##-----------------------------------------------------------------------------
 size_t <- function(x) {
-    return(new("size_t", as.integer(x)))
+    new("size_t", as.integer(x))
 }
 
 

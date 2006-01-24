@@ -1,6 +1,6 @@
-#
-# FLIPUD.R - Flip matrices up-down
-#
+###
+### FLIPUD.R - Flip matrices up-down
+###
 
 library(methods)
 
@@ -31,7 +31,7 @@ setMethod("flipud",
           signature(object = "array"),
           function(object) {
               #cat(match.call()[[1]], "(array)", "\n")
-              stop(paste("argument", sQuote("object"), "must be a vector or matrix"))
+              stop(paste("argument", sQuote("object"), "must be vector or matrix"))
           })
 
 setMethod("flipud",

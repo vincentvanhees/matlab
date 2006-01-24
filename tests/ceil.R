@@ -1,6 +1,6 @@
-#
-# CEIL.R
-#
+###
+### CEIL.R
+###
 
 test.ceil <- function(input, expected) {
     identical(matlab::ceil(input), expected)

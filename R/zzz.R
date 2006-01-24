@@ -1,9 +1,9 @@
-#
-# ZZZ.R
-#
+###
+### ZZZ.R
+###
 
 
-# Namespace environment for this package
+## Namespace environment for this package
 .MatlabNamespaceEnv <- new.env()
 
 
@@ -39,15 +39,20 @@
 
 ##-----------------------------------------------------------------------------
 .onLoad <- function(libname, pkgname) {
+    ## In case namespace is loaded (via import) by package that doesn't depend
+    ## on S4 methods and used in a session with non-default set of packages
+    require(methods)
+
+    ## Create environment for internal usage
     environment(.MatlabNamespaceEnv) <- asNamespace("matlab")
 
-    # Load internal variables
+    ## Load internal variables
     assign("savedTime", 0, envir = .MatlabNamespaceEnv)
 
-    # Allow no changes or additions to environment
+    ## Allow no changes or additions to environment
     lockEnvironment(.MatlabNamespaceEnv, bindings = TRUE)
 
-    # Only allow internal vars to change
+    ## Only allow internal vars to change
     unlockBinding("savedTime", .MatlabNamespaceEnv)
 }
 

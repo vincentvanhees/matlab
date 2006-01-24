@@ -1,6 +1,6 @@
-#
-# FLIPUD.R
-#
+###
+### FLIPUD.R
+###
 
 test.flipud <- function(input, expected) {
     identical(matlab::flipud(input), expected)
@@ -16,7 +16,7 @@ flipud.expected.X.vec <- seq(9, 1, by = -2)
 
 test.flipud(X.vec, flipud.expected.X.vec)
 
-# Since R does not really have concept of row/column vectors
-# identical(test.fliplr(X.vec, flipud.expected.X.vec),
-#           test.flipud(X.vec, flipud.expected.X.vec))
+## Since R does not really have concept of row/column vectors
+## identical(test.fliplr(X.vec, flipud.expected.X.vec),
+##           test.flipud(X.vec, flipud.expected.X.vec))
 

@@ -13,16 +13,19 @@ logspace(a, b, n = 50)
   \item{n}{numeric scalar specifying number of points to be generated}
 }
 \details{
-   Useful for creating frequency vectors, it is a logarithmic equivalent
-   of \code{linspace}.
+  Useful for creating frequency vectors, it is a logarithmic equivalent
+  of \code{linspace}.
 }
 \value{
-   Returns vector containing containing \code{n} points logarithmically
-   spaced between decades \eqn{10^\code{a}} and \eqn{10^\code{b}}.
+  Returns vector containing containing \code{n} points logarithmically
+  spaced between decades \eqn{10^\code{a}} and \eqn{10^\code{b}}.
+}
+\seealso{
+  \code{\link{linspace}}
 }
 \examples{
 logspace(1, pi, 36)
 }
 \author{P. Roebuck, \email{roebuck@mdanderson.org}}
-\keyword{interface}
+\keyword{manip}
 

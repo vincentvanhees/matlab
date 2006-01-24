@@ -13,16 +13,19 @@ linspace(a, b, n = 100)
   \item{n}{numeric scalar specifying number of points to be generated}
 }
 \details{
-   Similar to colon operator but gives direct control over the number of points.
+  Similar to colon operator but gives direct control over the number of points.
 }
 \value{
-   Returns vector containing containing \code{n} points linearly spaced
-   between \code{a} and \code{b} inclusive. If \eqn{\code{n} < 2}, the
-   result will be the ending point \code{b}.
+  Returns vector containing containing \code{n} points linearly spaced
+  between \code{a} and \code{b} inclusive. If \eqn{\code{n} < 2}, the
+  result will be the ending point \code{b}.
+}
+\seealso{
+  \code{\link{logspace}}
 }
 \examples{
 linspace(1, 10, 4)
 }
 \author{P. Roebuck, \email{roebuck@mdanderson.org}}
-\keyword{interface}
+\keyword{manip}
 

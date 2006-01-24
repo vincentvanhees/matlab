@@ -8,15 +8,19 @@
 eye(n, m = n)
 }
 \arguments{
-  \item{n, m}{dimensions for the result}
+  \item{n, m}{numeric scalar specifying dimensions for the result}
 }
 \value{
-   Returns matrix of order 1.
-   Defaults to square if second dimension argument \code{m} not provided.
+  Returns matrix of order 1.
+  Defaults to square if second dimension argument \code{m} not provided.
 }
+\seealso{ 
+  \code{\link{ones}},
+  \code{\link{zeros}}
+}   
 \examples{
 eye(3)
 }
 \author{P. Roebuck, \email{roebuck@mdanderson.org}}
-\keyword{interface}
+\keyword{array}
 

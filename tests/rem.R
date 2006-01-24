@@ -1,6 +1,6 @@
-#
-# REM.R
-#
+###
+### REM.R
+###
 
 test.rem <- function(input, expected) {
    identical(matlab::rem(input$x, input$y), expected)
@@ -19,11 +19,11 @@ test.rem(list(x = X.mat, y = 2), rem.expected.X.mat.Y2)
 test.rem(list(x = X.mat, y = 3), rem.expected.X.mat)
 
 
-# rem & mod give same results with X, Y having same sign
+## rem & mod give same results with X, Y having same sign
 test.rem(list(x = 5, y = 3), matlab::mod(5, 3))
 test.rem(list(x = -5, y = -3), matlab::mod(-5, -3))
 
-# alternate formula used when X, Y having different signs
+## alternate formula used when X, Y having different signs
 test.rem(list(x = 5, y = -3), (matlab::mod(5, -3) - -3))
 test.rem(list(x = -5, y = 3), (matlab::mod(-5, 3) - 3))
 

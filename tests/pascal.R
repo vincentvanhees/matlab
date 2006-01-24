@@ -1,6 +1,6 @@
-#
-# PASCAL.R
-#
+###
+### PASCAL.R
+###
 
 test.pascal <- function(input, expected) {
     if (length(input) == 1) {

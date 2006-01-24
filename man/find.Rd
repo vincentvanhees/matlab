@@ -11,16 +11,17 @@ find(x)
   \item{x}{expression to evaluate}
 }
 \details{
-   If expression is not logical, finds indices of nonzero elements of
-argument \code{x}.
+  If expression is not logical, finds indices of nonzero elements of
+  argument \code{x}.
 }
 \value{
-   Returns indices of corresponding elements matching the expression \code{x}.
+  Returns indices of corresponding elements matching the expression \code{x}.
 }
 \examples{
 find(-3:3 >= 0)
 find(c(0, 1, 0, 2, 3))
 }
 \author{P. Roebuck, \email{roebuck@mdanderson.org}}
-\keyword{interface}
+\keyword{logic}
+\keyword{attribute}
 

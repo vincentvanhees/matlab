@@ -1,6 +1,6 @@
-#
-# LINSPACE.R - Generate linearly spaced vectors
-#
+###
+### LINSPACE.R - Generate linearly spaced vectors
+###
 
 
 ##-----------------------------------------------------------------------------

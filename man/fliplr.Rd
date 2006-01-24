@@ -23,17 +23,20 @@ flipud(object)
   \item{object}{vector or matrix to be flipped}
 }
 \details{
-   These are S4 generic functions.
+  These are S4 generic functions.
 }
 \value{
-   Return value is the same type as argument \code{object}.
+  Return value is the same type as argument \code{object}.
 }
+\seealso{ 
+  \code{\link{rot90}}
+}   
 \examples{
 fliplr(1:9)
-flipud(1:9)		# same as previous since vectors have no orientation in R
+flipud(1:9)	# same as previous since vectors have no orientation in R
 fliplr(matrix(1:9, 3, 3, byrow = TRUE))
 flipud(matrix(1:9, 3, 3, byrow = TRUE))
 }
 \author{P. Roebuck, \email{roebuck@mdanderson.org}}
-\keyword{interface}
+\keyword{array}
 

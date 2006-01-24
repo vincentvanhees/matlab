@@ -10,16 +10,19 @@ ones(n, m = n)
 zeros(n, m = n)
 }
 \arguments{
-  \item{n, m}{dimensions for the result}
+  \item{n, m}{numeric scalars specifying dimensions for the result}
 }
 \value{
-   Returns matrix consisting only of ones (or zeros).
-   Defaults to square if second dimension argument \code{m} not provided.
+  Returns matrix consisting only of ones (or zeros).
+  Defaults to square if second dimension argument \code{m} not provided.
 }
+\seealso{ 
+  \code{\link{eye}}
+}   
 \examples{
 ones(3)
 zeros(3)
 }
 \author{P. Roebuck, \email{roebuck@mdanderson.org}}
-\keyword{interface}
+\keyword{array}
 

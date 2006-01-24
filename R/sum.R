@@ -1,6 +1,6 @@
-#
-# SUM.R - Sum of elements
-#
+###
+### SUM.R - Sum of elements
+###
 
 library(methods)
 
@@ -11,7 +11,10 @@ setGeneric("sum",
                #cat("generic", match.call()[[1]], "\n")
                if (!is.logical(na.rm)) {
                    stop(paste("argument", sQuote("na.rm"), "must be logical"))
+               } else if (!(length(na.rm) == 1)) {
+                   stop(paste("argument", sQuote("na.rm"), "must be of length 1"))
                }
+
                standardGeneric("sum")
            },
            useAsDefault = FALSE)

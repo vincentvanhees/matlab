@@ -1,6 +1,6 @@
-#
-# FLIPLR.R - Flip matrices left-right
-#
+###
+### FLIPLR.R - Flip matrices left-right
+###
 
 library(methods)
 
@@ -31,7 +31,7 @@ setMethod("fliplr",
           signature(object = "array"),
           function(object) {
               #cat(match.call()[[1]], "(array)", "\n")
-              stop(paste("argument", sQuote("object"), "must be a vector or matrix"))
+              stop(paste("argument", sQuote("object"), "must be vector or matrix"))
            })
 
 setMethod("fliplr",

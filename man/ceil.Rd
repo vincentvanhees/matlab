@@ -11,16 +11,19 @@ ceil(x)
   \item{x}{numeric to be rounded}
 }
 \details{
-   Simply invokes \code{base::ceiling} for those more used to C library API
-name.
+  Simply invokes \code{ceiling} for those more used to C library API name.
 }
 \value{
-   Returns vector containing smallest integers not less than the
-   corresponding elements of argument \code{x}.
+  Returns vector containing smallest integers not less than the
+  corresponding elements of argument \code{x}.
+}
+\seealso{
+  \code{\link{fix}},
+  \code{\link[base]{Round}}
 }
 \examples{
 ceil(c(0.9, 1.3, 2.4))
 }
 \author{P. Roebuck, \email{roebuck@mdanderson.org}}
-\keyword{interface}
+\keyword{arith}
 

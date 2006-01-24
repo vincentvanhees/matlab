@@ -1,6 +1,6 @@
-#
-# REPMAT.R
-#
+###
+### REPMAT.R
+###
 
 test.repmat <- function(input, expected) {
     if (length(input) == 2) {

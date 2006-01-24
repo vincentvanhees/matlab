@@ -1,6 +1,6 @@
-#
-# LOGSPACE.R
-#
+###
+### LOGSPACE.R
+###
 
 test.logspace <- function(input, expected) {
     if (length(input) == 2) {

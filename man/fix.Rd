@@ -11,15 +11,19 @@ fix(A)
   \item{A}{numeric to be rounded}
 }
 \details{
-   Simply invokes \code{base::trunc}.
+  Simply invokes \code{\link[base]{trunc}}.
 }
 \value{
-   Returns vector containing integers by truncating the
-   corresponding values of argument \code{A} toward zero.
+  Returns vector containing integers by truncating the
+  corresponding values of argument \code{A} toward zero.
 }
+\seealso{ 
+  \code{\link{ceil}},
+  \code{\link[base]{Round}}
+}   
 \examples{
 fix(c(1.3, 2.5, 3.7))
 }
 \author{P. Roebuck, \email{roebuck@mdanderson.org}}
-\keyword{interface}
+\keyword{arith}
 

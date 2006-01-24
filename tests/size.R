@@ -1,6 +1,6 @@
-#
-# SIZE.R
-#
+###
+### SIZE.R
+###
 
 test.size <- function(input, expected) {
    identical(as.integer(matlab::size(input)), expected)

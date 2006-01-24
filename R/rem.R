@@ -1,6 +1,6 @@
-#
-# REM.R - Remainder after division
-#
+###
+### REM.R - Remainder after division
+###
 
 
 ##-----------------------------------------------------------------------------
@@ -10,6 +10,7 @@ rem <- function(x, y) {
           (x < 0 && y < 0))) {
         ans <- ans - y
     }
+
     return(ans)
 }
 

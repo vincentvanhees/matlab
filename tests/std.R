@@ -1,6 +1,6 @@
-#
-# STD.R
-#
+###
+### STD.R
+###
 
 test.std <- function(input, expected) {
     identical(all.equal(matlab::std(input),

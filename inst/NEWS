@@ -1,3 +1,11 @@
+0.7-8:	Added 'colorbar' method
+      	Added 'fileparts' method
+      	Added 'filesep' and 'pathsep' objects
+      	Added 'fullfile' method
+      	Added 'imagesc' method
+      	Added 'jet.colors' method
+      	Updated package documentation
+
 0.7-7:	Added 'pascal' method
       	Added 'linspace' method
       	Added 'logspace' method

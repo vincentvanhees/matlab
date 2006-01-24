@@ -13,21 +13,21 @@ pascal(n, k = 0)
 are 0, 1, or 2}
 }
 \details{
-    Specifying no option returns symmetric positive definite matrix
-with integer entries taken from Pascal's triangle.
+  Specifying no option returns symmetric positive definite matrix
+  with integer entries taken from Pascal's triangle.
 
-    Specifying option one returns the lower triangular Cholesky factor
-(up to the signs of the columns) of the Pascal matrix.
+  Specifying option one returns the lower triangular Cholesky factor
+  (up to the signs of the columns) of the Pascal matrix.
 
-    Specifying option two returns a cube root of the identity matrix.
+  Specifying option two returns a cube root of the identity matrix.
 }
 \value{
-   Returns matrix of order \code{n} according to specified option \code{k}.
+  Returns matrix of order \code{n} according to specified option \code{k}.
 }
 \examples{
 pascal(4)
 pascal(3, 2)
 }
 \author{P. Roebuck, \email{roebuck@mdanderson.org}}
-\keyword{interface}
+\keyword{array}
 

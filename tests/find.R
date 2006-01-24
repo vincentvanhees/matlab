@@ -1,6 +1,6 @@
-#
-# FIND.R
-#
+###
+### FIND.R
+###
 
 test.find <- function(expr, expected) {
     identical(matlab::find(expr), expected)

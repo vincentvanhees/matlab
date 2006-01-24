@@ -1,6 +1,6 @@
-#
-# SUM.R
-#
+###
+### SUM.R
+###
 
 test.sum <- function(input, expected) {
     identical(all.equal(matlab::sum(input, FALSE),

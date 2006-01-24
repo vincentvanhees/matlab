@@ -1,16 +1,18 @@
-#
-# ROT90.R - Rotates matrix counterclockwise k*90 degrees
-#
+###
+### ROT90.R - Rotates matrix counterclockwise k*90 degrees
+###
 
 
 ##-----------------------------------------------------------------------------
 rot90 <- function(A, k = 1) {
     if (!(is.matrix(A))) {
-        stop(paste("argument", sQuote("A"), "must be a 2-D matrix"))
+        stop(paste("argument", sQuote("A"), "must be 2-D matrix"))
     }
 
-    if (!(length(k) == 1)) {
-        stop(paste("argument", sQuote("k"), "must be a scalar"))
+    if (!is.numeric(k)) {
+        stop(paste("argument", sQuote("k"), "must be numeric"))
+    } else if (!(length(k) == 1)) {
+        stop(paste("argument", sQuote("k"), "must be of length 1"))
     }
 
     .rot90 <- function(A) {

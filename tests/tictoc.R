@@ -1,6 +1,6 @@
-#
-# TICTOC.R
-#
+###
+### TICTOC.R
+###
 
 test.toc <- function(delay, expected) {
     Sys.sleep(delay)

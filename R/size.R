@@ -1,6 +1,6 @@
-#
-# SIZE.R - Array dimensions
-#
+###
+### SIZE.R - Array dimensions
+###
 
 library(methods)
 
@@ -74,12 +74,10 @@ getLengthOfDimension <- function(X, dimen) {
         stop(paste("argument", sQuote("X"), "must be matrix or array"))
     }
 
-    if (length(dimen) > 1) {
-        stop(paste("argument", sQuote("dimen"), "must be scalar"))
-    }
-
-    if (dimen < 1) {
-        stop(paste("argument", sQuote("dimen"), "must be positive value"))
+    if (!(length(dimen) == 1)) {
+        stop(paste("argument", sQuote("dimen"), "must be of length 1"))
+    } else if (dimen < 1) {
+        stop(paste("argument", sQuote("dimen"), "must be a positive quantity"))
     }
 
     len <- if (dimen <= length(dim(X))) {
