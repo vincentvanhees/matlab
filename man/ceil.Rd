@@ -14,7 +14,7 @@ ceil(x)
   Simply invokes \code{ceiling} for those more used to C library API name.
 }
 \value{
-  Returns vector containing smallest integers not less than the
+  Returns numeric vector containing smallest integers not less than the
   corresponding elements of argument \code{x}.
 }
 \seealso{

@@ -6,7 +6,7 @@
   This class represents the dimensions of another \R object
 }
 \section{Objects from the Class}{
-  Objects can be created by calls of the form \code{new("size_t", ...)}.
+  Objects can be created by calls of the form \code{new("size_t", \dots)}.
   Use of generator method is preferred.
 }
 \section{Slots}{
@@ -24,3 +24,4 @@ Class \code{"numeric"}, by class \code{"integer"}.
 }
 \author{P. Roebuck, \email{roebuck@mdanderson.org}}
 \keyword{classes}
+

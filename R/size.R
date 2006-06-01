@@ -16,7 +16,9 @@ setMethod("size",
           signature(X = "vector", dimen = "missing"),
           function(X, dimen) {
               #cat(match.call()[[1]], "(vector, missing)", "\n")
-              return(as.size_t(length(X)))
+#              return(as.size_t(length(X)))
+# :NOTE: Incompatible with previous implementation but consistent with MATLAB
+              callGeneric(matrix(X, nrow = 1))
           })
 
 setMethod("size",
@@ -34,6 +36,13 @@ setMethod("size",
           })
 
 setMethod("size",
+          signature(X = "vector", dimen = "numeric"),
+          function(X, dimen) {
+              #cat(match.call()[[1]], "(vector, numeric)", "\n")
+              callGeneric(matrix(X, nrow = 1), dimen)
+          })
+
+setMethod("size",
           signature(X = "matrix", dimen = "numeric"),
           function(X, dimen) {
               #cat(match.call()[[1]], "(matrix, numeric)", "\n")
@@ -44,7 +53,7 @@ setMethod("size",
           signature(X = "matrix", dimen = "integer"),
           function(X, dimen) {
               #cat(match.call()[[1]], "(matrix, integer)", "\n")
-              return(as.size_t(getLengthOfDimension(X, dimen)))
+              return(getLengthOfDimension(X, dimen))
           })
 
 setMethod("size",
@@ -59,25 +68,26 @@ setMethod("size",
           function(X, dimen) {
               #cat(match.call()[[1]],
               #    "(", data.class(X), ", ", data.class(dimen), ")", "\n")
-              return(as.size_t(getLengthOfDimension(X, dimen)))
+              return(getLengthOfDimension(X, dimen))
           })
 
 setMethod("size",
           signature(X = "missing"),
           function(X, dimen) {
               #cat(match.call()[[1]], "(missing)", "\n")
-              stop(paste("argument", sQuote("X"), "missing"))
+              stop(sprintf("argument %s missing", sQuote("X")))
           })
 
 getLengthOfDimension <- function(X, dimen) {
-    if (is.array(X) == FALSE) {
-        stop(paste("argument", sQuote("X"), "must be matrix or array"))
+    if (!is.array(X)) {
+        stop(sprintf("argument %s must be matrix or array", sQuote("X")))
     }
 
     if (!(length(dimen) == 1)) {
-        stop(paste("argument", sQuote("dimen"), "must be of length 1"))
+        stop(sprintf("argument %s must be of length 1", sQuote("dimen")))
     } else if (dimen < 1) {
-        stop(paste("argument", sQuote("dimen"), "must be a positive quantity"))
+        stop(sprintf("argument %s must be a positive quantity",
+                     sQuote("dimen")))
     }
 
     len <- if (dimen <= length(dim(X))) {
@@ -86,6 +96,6 @@ getLengthOfDimension <- function(X, dimen) {
                1	# singleton dimension
            }
 
-    return(as.size_t(len))
+    return(as.integer(len))
 }
 

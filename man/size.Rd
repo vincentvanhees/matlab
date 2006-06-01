@@ -1,12 +1,13 @@
 \name{size}
 \alias{size}
-\alias{size,vector,missing-method}
-\alias{size,matrix,integer-method}
-\alias{size,matrix,missing-method}
-\alias{size,matrix,numeric-method}
 \alias{size,array,integer-method}
 \alias{size,array,missing-method}
 \alias{size,array,numeric-method}
+\alias{size,matrix,integer-method}
+\alias{size,matrix,missing-method}
+\alias{size,matrix,numeric-method}
+\alias{size,vector,missing-method}
+\alias{size,vector,numeric-method}
 \alias{size,missing-method}
 \title{MATLAB size function}
 \description{
@@ -16,22 +17,30 @@
 size(X, dimen)
 }
 \arguments{
-  \item{X}{numeric vector or matrix}
+  \item{X}{vector, matrix, or array object}
   \item{dimen}{numeric scalar specifies particular dimension}
 }
 \details{
   This is an S4 generic function.
-  Invokes \code{\link[base]{length}} or \code{\link[base]{dim}} depending on
-  argument \code{X}.
+  Vector will be treated as a single row matrix. 
+  Stored value is equivalent to \code{\link[base]{dim}}.
 }
 \value{
   Returns object of class \code{size_t} containing the dimensions of
-  input argument.
+  input argument \code{X} if invoked with a single argument. Returns
+  integer value of specified dimension if invoked with two arguments.
+  If \code{dimen} specifies a higher dimension than exists, returns 1
+  representing the singleton dimension. 
+}
+\note{
+  Handling of vectors is different than in initial implementation.
+  Initial implementation returned \code{\link[base]{length}}.
 }
 \examples{
-size(1:8)
-size(matrix(1:8, 2, 4))
-size(matrix(1:8, 2, 4), 2)
+size(2:9)			# 1 8
+size(matrix(1:8, 2, 4))		# 2 4
+size(matrix(1:8, 2, 4), 2)	# 4
+size(matrix(1:8, 2, 4), 3)	# 1
 }
 \author{P. Roebuck, \email{roebuck@mdanderson.org}}
 \keyword{array}

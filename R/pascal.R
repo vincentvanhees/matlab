@@ -6,15 +6,15 @@
 ##-----------------------------------------------------------------------------
 pascal <- function(n, k = 0) {
     if (!is.numeric(n)) {
-        stop(paste("argument", sQuote("n"), "must be numeric"))
+        stop(sprintf("argument %s must be numeric", sQuote("n")))
     } else if (!(length(n) == 1)) {
-        stop(paste("argument", sQuote("n"), "must be of length 1"))
+        stop(sprintf("argument %s must be of length 1", sQuote("n")))
     }
 
     if (!is.numeric(k)) {
-        stop(paste("argument", sQuote("k"), "must be numeric"))
+        stop(sprintf("argument %s must be numeric", sQuote("k")))
     } else if (!(length(k) == 1)) {
-        stop(paste("argument", sQuote("k"), "must be of length 1"))
+        stop(sprintf("argument %s must be of length 1", sQuote("k")))
     }
 
     stopifnot(k >= 0, k <= 2)
@@ -30,8 +30,8 @@ pascal <- function(n, k = 0) {
     }
 
     if (k == 0) {
-        P<- P %*% t(P)
-    } else if ( k == 1) {
+        P <- P %*% t(P)
+    } else if (k == 1) {
         ;
     } else if (k == 2) {
         P <- matlab::rot90(P, 3)

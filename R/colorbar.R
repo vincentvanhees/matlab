@@ -19,11 +19,11 @@ colorbar <- function(C, location = c("EastOutside",
                                      "NorthOutside",
                                      "SouthOutside"), ...) {
     if (!is.numeric(C)) {
-        stop(paste(sQuote("C"), "must be numeric"))
+        stop(sprintf("argument %s must be numeric", sQuote("C")))
     }
 
     if (!is.character(location)) {
-        stop(paste(sQuote("location"), "must be character"))
+        stop(sprintf("argument %s must be character", sQuote("location")))
     }
     location <- match.arg(location)
 

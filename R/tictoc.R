@@ -1,5 +1,5 @@
 ###
-### TICTOC.R - Stopwatch Timer
+### TICTOC.R - Stopwatch timer
 ###
 
 
@@ -18,7 +18,7 @@ toc <- function(echo = TRUE) {
     prevTime <- get("savedTime", envir = .MatlabNamespaceEnv)
     diffTimeSecs <- proc.time()[3] - prevTime
     if (echo) {
-        cat("elapsed time is", diffTimeSecs, "seconds", "\n")
+        cat(sprintf("elapsed time is %f seconds", diffTimeSecs), "\n")
         return(invisible())
     } else {
         return(diffTimeSecs)

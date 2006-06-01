@@ -2,8 +2,11 @@
 ### ROT90.R
 ###
 
+
+##-----------------------------------------------------------------------------
 test.rot90 <- function(input, expected) {
-   identical(matlab::rot90(input$A, input$k), expected)
+    output <- do.call(getFromNamespace("rot90", "matlab"), input)
+    identical(output, expected)
 }
 
 X.mat <- matrix(1:9, nrow = 3, byrow = TRUE)

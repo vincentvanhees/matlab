@@ -10,6 +10,6 @@ find <- function(x) {
             } else {
                 x != 0
             }
-    which(expr)
+    return(which(expr))
 }
 

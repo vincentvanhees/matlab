@@ -6,9 +6,9 @@
 ##-----------------------------------------------------------------------------
 fileparts <- function(pathname) {
     if (!is.character(pathname)) {
-        stop(paste(sQuote("pathname"), "must be character"))
+        stop(sprintf("argument %s must be character", sQuote("pathname")))
     } else if (!(length(pathname) == 1)) {
-        stop(paste(sQuote("pathname"), "must be of length 1"))
+        stop(sprintf("argument %s must be of length 1", sQuote("pathname")))
     }
 
     ## R only expands a single tilde, optionally followed by sep
@@ -81,9 +81,9 @@ fileparts <- function(pathname) {
                name <- sub(tildeUser, "~", name))
     }
 
-    list(pathstr = pathstr,
-         name    = name,
-         ext     = ifelse(!is.na(ext), ext, ""),
-         versn   = "")
+    return(list(pathstr = pathstr,
+                name    = name,
+                ext     = ifelse(!is.na(ext), ext, ""),
+                versn   = ""))
 }
 

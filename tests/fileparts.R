@@ -2,8 +2,11 @@
 ### FILEPARTS.R
 ###
 
+
+##-----------------------------------------------------------------------------
 test.fileparts <- function(input, expected) {
-    identical(matlab::fileparts(input), expected)
+    output <- do.call(getFromNamespace("fileparts", "matlab"), input)
+    identical(output, expected)
 }
 
 ext <- ".ext"
@@ -35,119 +38,119 @@ tilde.user.dir.trailing.slash <- paste(tilde.user.dir, "", sep = "/")
 
 
 ## 'myfile.ext'
-test.fileparts(file.with.ext,
+test.fileparts(list(file.with.ext),
                list(pathstr = "",
                     name    = file.without.ext,
                     ext     = ext,
                     versn   = ""))
 
 ## '/home/luser/myfile.ext'
-test.fileparts(abs.dir.file.with.ext,
+test.fileparts(list(abs.dir.file.with.ext),
                list(pathstr = abs.dir,
                     name    = file.without.ext,
                     ext     = ext,
                     versn   = ""))
 
 ## '/home/luser/myfile.ext.gz'
-test.fileparts(abs.dir.file.with.ext.gz,
+test.fileparts(list(abs.dir.file.with.ext.gz),
                list(pathstr = abs.dir,
                     name    = file.with.ext,
                     ext     = gz,
                     versn   = ""))
 
 ## '/home/luser/myfile'
-test.fileparts(abs.dir.file.without.ext,
+test.fileparts(list(abs.dir.file.without.ext),
                list(pathstr = abs.dir,
                     name    = file.without.ext,
                     ext     = "",
                     versn   = ""))
 
 ## '/home/luser/.profile'
-test.fileparts(abs.dir.hidden.file,
+test.fileparts(list(abs.dir.hidden.file),
                list(pathstr = abs.dir,
                     name    = character(0),
                     ext     = hidden.file,
                     versn   = ""))
 
 ## '/home/luser'
-test.fileparts(abs.dir,
+test.fileparts(list(abs.dir),
                list(pathstr = dirname(abs.dir),
                     name    = basename(abs.dir),
                     ext     = "",
                     versn   = ""))
 
 ## '/home/luser/'
-test.fileparts(abs.dir.trailing.slash,
+test.fileparts(list(abs.dir.trailing.slash),
                list(pathstr = abs.dir,
                     name    = character(0),
                     ext     = "",
                     versn   = ""))
 
 ## './myfile.ext'
-test.fileparts(rel.cur.dir.file.with.ext,
+test.fileparts(list(rel.cur.dir.file.with.ext),
                list(pathstr = rel.cur.dir,
                     name    = file.without.ext,
                     ext     = ext,
                     versn   = ""))
 
 ## './myfile'
-test.fileparts(rel.cur.dir.file.without.ext,
+test.fileparts(list(rel.cur.dir.file.without.ext),
                list(pathstr = rel.cur.dir,
                     name    = file.without.ext,
                     ext     = "",
                     versn   = ""))
 
 ## './.profile'
-test.fileparts(rel.cur.dir.hidden.file,
+test.fileparts(list(rel.cur.dir.hidden.file),
                list(pathstr = rel.cur.dir,
                     name    = character(0),
                     ext     = hidden.file,
                     versn   = ""))
 
 ## '.'
-test.fileparts(rel.cur.dir,
+test.fileparts(list(rel.cur.dir),
                list(pathstr = "",
                     name    = character(0),
                     ext     = ".",
                     versn   = ""))
 
 ## '..'
-test.fileparts(rel.parent.dir,
+test.fileparts(list(rel.parent.dir),
                list(pathstr = "",
                     name    = ".",
                     ext     = ".",
                     versn   = ""))
 
 ## './'
-test.fileparts(rel.cur.dir.trailing.slash,
+test.fileparts(list(rel.cur.dir.trailing.slash),
                list(pathstr = rel.cur.dir,
                     name    = character(0),
                     ext     = "",
                     versn   = ""))
 
 ## "~"
-test.fileparts(tilde.dir,
+test.fileparts(list(tilde.dir),
                list(pathstr = "",
                     name    = tilde.dir,
                     ext     = "",
                     versn   = ""))
 
 ## "~/"
-test.fileparts(tilde.dir.trailing.slash,
+test.fileparts(list(tilde.dir.trailing.slash),
                list(pathstr = tilde.dir,
                     name    = character(0),
                     ext     = "",
                     versn   = ""))
 
 ## "~luser"
-test.fileparts(tilde.user.dir,
+test.fileparts(list(tilde.user.dir),
                list(pathstr = "",
                     name    = tilde.user.dir,
                     ext     = "",
                     versn   = ""))
 
 ## "~luser/"
-test.fileparts(tilde.user.dir.trailing.slash,
+test.fileparts(list(tilde.user.dir.trailing.slash),
                list(pathstr = tilde.user.dir,
                     name    = character(0),
                     ext     = "",

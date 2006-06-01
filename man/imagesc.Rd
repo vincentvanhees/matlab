@@ -2,16 +2,21 @@
 \alias{imagesc}
 \title{MATLAB imagesc function}
 \description{
-  Scales image data to the full range of the current pallette and
+  Scales image data to the full range of the current palette and
   displays the image.
 }
 \usage{
-imagesc(C, \dots)
+imagesc(x = seq(ncol(C)), y = seq(nrow(C)), C, col = jet.colors(12), \dots)
 }
 \arguments{
-  \item{C}{numeric matrix representing data to be plotted}
-  \item{\dots}{graphical parameters for \link[graphics]{image} may also be passed
-    as arguments to this method}
+  \item{x,y}{locations of grid lines at which the values in \code{C} are
+    measured. These must be finite, non-missing and in (strictly)
+    ascending order. By default, the dimensions of \code{C} are used.}
+  \item{C}{numeric matrix representing data to be plotted. Note that
+    \code{x} can be used instead of \code{C} for convenience.}
+  \item{col}{vector of colors used to display image data}
+  \item{\dots}{graphical parameters for \link[graphics]{image} may also be
+    passed as arguments to this method}
 }
 \details{
   Each element of \code{C} corresponds to a rectangular area in the image.

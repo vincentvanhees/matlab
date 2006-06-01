@@ -31,20 +31,22 @@ setMethod("fliplr",
           signature(object = "array"),
           function(object) {
               #cat(match.call()[[1]], "(array)", "\n")
-              stop(paste("argument", sQuote("object"), "must be vector or matrix"))
+              stop(sprintf("argument %s must be vector or matrix",
+                           sQuote("object")))
            })
 
 setMethod("fliplr",
           signature(object = "ANY"),
           function(object) {
               #cat(match.call()[[1]], "(ANY)", "\n")
-              stop(paste("method not defined for", data.class(object), "argument"))
+              stop(sprintf("method not defined for %s argument",
+                           data.class(object)))
            })
 
 setMethod("fliplr",
           signature(object = "missing"),
           function(object) {
               #cat(match.call()[[1]], "(missing)", "\n")
-              stop(paste("argument", sQuote("object"), "missing"))
+              stop(sprintf("argument %s missing", sQuote("object")))
            })
 

@@ -28,10 +28,9 @@
             }
 
             desc <- packageDescription(pkgname)
-            cat(paste(desc$Title, ", version ", desc$Version, sep = ""), "\n")
-            cat(paste("Type library(help=",
-                      sQuote(libraryPkgName(pkgname)),
-                      ") to see package documentation.", sep = ""), "\n")
+            message(sprintf("%s, version %s", desc$Title, desc$Version))
+            message(sprintf("Type library(help=%s) to see package documentation",
+                            libraryPkgName(pkgname)))
         })
     }
 }

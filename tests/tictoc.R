@@ -2,9 +2,12 @@
 ### TICTOC.R
 ###
 
+
+##-----------------------------------------------------------------------------
 test.toc <- function(delay, expected) {
     Sys.sleep(delay)
-    all.equal(matlab::toc(FALSE),
+    output <- matlab::toc(FALSE)
+    all.equal(output,
               expected,
               tolerance = 0.10)
 }

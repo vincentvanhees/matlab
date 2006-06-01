@@ -6,21 +6,24 @@
   Create a matrix consisting of all ones or zeros.
 }
 \usage{
-ones(n, m = n)
-zeros(n, m = n)
+ones(\dots)
+zeros(\dots)
 }
 \arguments{
-  \item{n, m}{numeric scalars specifying dimensions for the result}
+  \item{\dots}{numeric dimensions for the result}
 }
 \value{
   Returns matrix consisting only of ones (or zeros).
-  Defaults to square if second dimension argument \code{m} not provided.
+  Defaults to square if dimension argument resolves to a single value.
 }
 \seealso{ 
   \code{\link{eye}}
 }   
 \examples{
 ones(3)
+ones(c(3, 3))                   # same thing 
+ones(3, 3)                      # same thing
+ones(size(matrix(NA, 3, 3)))    # same thing
 zeros(3)
 }
 \author{P. Roebuck, \email{roebuck@mdanderson.org}}

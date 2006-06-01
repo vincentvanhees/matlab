@@ -1,3 +1,24 @@
+0.8-0:  Added 'cell' method
+        Added 'isempty' method
+        Added 'magic' method
+        Added 'meshgrid' method
+        Added 'ndims' method
+        Added 'numel' method
+        Added 'padarray' method
+        Added 'reshape' method
+        Added 'strcmp' method
+        Modified 'repmat' to handle character vectors.
+        Updated package documentation
+
+0.7-9:	Fixed quoting in help message
+        Converted error messages to use sprintf method instead of paste
+        Corrected 'ones', 'zeros', 'eye' methods for certain 'size_t' arguments
+        Modified 'imagesc' method argument list to allow for x,y,col arguments
+        Modified 'imagesc' method to use {xy}axp args for tickmark labels
+        Added argument checking to 'linspace' method
+        Modified 'repmat' method to not drop single dimension before replication
+        Updated package documentation
+
 0.7-8:	Added 'colorbar' method
       	Added 'fileparts' method
       	Added 'filesep' and 'pathsep' objects

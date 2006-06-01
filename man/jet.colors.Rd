@@ -12,7 +12,7 @@ jet.colors(n)
   \item{n}{numeric scalar specifying number of colors to be in the palette}
 }
 \value{
-  Returns vector of \code{n} colors names. This can be used either to create
+  Returns vector of \code{n} color names. This can be used either to create
   a user-defined color palette for subsequent graphics, a \code{col=}
   specification in graphics functions or in \code{par}.
 }
@@ -22,7 +22,9 @@ jet.colors(n)
   \code{\link[grDevices]{rgb}}
 }
 \examples{
-jet.colors(4)
+require(graphics)
+x <- 1:16
+pie(x, col = jet.colors(length(x)))
 }
 \author{P. Roebuck, \email{roebuck@mdanderson.org}}
 \keyword{color}

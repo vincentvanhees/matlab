@@ -5,14 +5,14 @@
   Create an identity matrix.
 }
 \usage{
-eye(n, m = n)
+eye(m, n)
 }
 \arguments{
-  \item{n, m}{numeric scalar specifying dimensions for the result}
+  \item{m, n}{numeric scalar specifying dimensions for the result}
 }
 \value{
   Returns matrix of order 1.
-  Defaults to square if second dimension argument \code{m} not provided.
+  Defaults to square if second dimension argument \code{n} not provided.
 }
 \seealso{ 
   \code{\link{ones}},

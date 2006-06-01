@@ -4,33 +4,24 @@
 
 
 ##-----------------------------------------------------------------------------
-ones <- function(n, m = n) {
-    if (!is.numeric(n)) {
-        stop(paste("argument", sQuote("n"), "must be numeric"))
-    } else if (!(length(n) == 1)) {
-        stop(paste("argument", sQuote("n"), "must be of length 1"))
-    } else if ((n <= 0)) {
-        stop(paste("argument", sQuote("n"), "must be a positive quantity"))
+ones <- function(...) {
+    nargs <- length(dots <- list(...))
+    dims <- as.integer(if (nargs == 1 && matlab:::is.size_t(dots[[1]])) {
+                           dots[[1]]
+                       } else {
+                           unlist(dots)
+                       })
+
+    if (length(dims) == 1) {
+        dims[2] <- dims[1]
     }
 
-    if (!is.numeric(m)) {
-        stop(paste("argument", sQuote("m"), "must be numeric"))
-    } else if (!(length(m) == 1)) {
-        stop(paste("argument", sQuote("m"), "must be of length 1"))
-    } else if (m <= 0) {
-        stop(paste("argument", sQuote("m"), "must be a positive quantity"))
+    if (!(length(dims) > 1)) {
+        stop("dimensions must be of length greater than 1")
+    } else if (!(all(dims > 0))) {
+        stop("dimensions must be a positive quantity")
     }
 
-    ## Handle special case of size argument
-    if (matlab:::is.size_t(n) == TRUE) {
-        m <- 1
-    }
-
-    .fillMatrix <- function(n, m = n, x = 1) {
-        nm <- rep.int(x, (n*m))
-        return(matrix(nm, n, m))
-    }
-
-    return(.fillMatrix(n, m))
+    return(array(1, dims))
 }
 

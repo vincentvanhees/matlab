@@ -2,18 +2,14 @@
 ### LOGSPACE.R
 ###
 
+
+##-----------------------------------------------------------------------------
 test.logspace <- function(input, expected) {
-    if (length(input) == 2) {
-        identical(all.equal(matlab::logspace(input$a, input$b),
-                            expected,
-                            tolerance = 0.0001),
-                  TRUE)
-    } else {
-        identical(all.equal(matlab::logspace(input$a, input$b, input$n),
-                            expected,
-                            tolerance = 0.0001),
-                  TRUE)
-    }
+    output <- do.call(getFromNamespace("logspace", "matlab"), input)
+    identical(all.equal(output, 
+                        expected,
+                        tolerance = 0.0001),
+              TRUE)
 }
 
 logspace.expected.1topi <- c(10.0000, 7.4866, 5.6050, 4.1963, 3.1416)

@@ -2,12 +2,11 @@
 ### PASCAL.R
 ###
 
+
+##-----------------------------------------------------------------------------
 test.pascal <- function(input, expected) {
-    if (length(input) == 1) {
-        identical(matlab::pascal(input$n), expected)
-    } else {
-        identical(matlab::pascal(input$n, input$k), expected)
-    }
+    output <- do.call(getFromNamespace("pascal", "matlab"), input)
+    identical(output, expected)
 }
 
 pascal.expected.n4 <- matrix(c(1,  1,  1,  1,

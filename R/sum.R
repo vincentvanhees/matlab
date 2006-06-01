@@ -10,9 +10,10 @@ setGeneric("sum",
            function(x, na.rm = FALSE) {
                #cat("generic", match.call()[[1]], "\n")
                if (!is.logical(na.rm)) {
-                   stop(paste("argument", sQuote("na.rm"), "must be logical"))
+                   stop(sprintf("argument %s must be logical", sQuote("na.rm")))
                } else if (!(length(na.rm) == 1)) {
-                   stop(paste("argument", sQuote("na.rm"), "must be of length 1"))
+                   stop(sprintf("argument %s must be of length 1",
+                                sQuote("na.rm")))
                }
 
                standardGeneric("sum")
@@ -54,7 +55,8 @@ setMethod("sum",
 setMethod("sum",
           signature(x = "array", na.rm = "logical"),
           function(x, na.rm) {
-              stop(paste("method not implemented for", data.class(x), "argument"))
+              stop(sprintf("method not implemented for %s argument",
+                           data.class(x)))
           })
 
 setMethod("sum",
@@ -67,19 +69,19 @@ setMethod("sum",
 setMethod("sum",
           signature(x = "logical"),
           function(x, na.rm) {
-              stop(paste("argument", sQuote("x"), "cannot be logical"))
+              stop(sprintf("argument %s cannot be logical", sQuote("x")))
           })
 
 setMethod("sum",
           signature(x = "ANY"),
           function(x, na.rm) {
               #cat(match.call()[[1]], "(ANY)", "\n")
-              stop(paste("method not defined for", data.class(x), "argument"))
+              stop(sprintf("method not defined for %s argument", data.class(x)))
           })
 
 setMethod("sum",
           signature(x = "missing"),
           function(x, na.rm) {
-              stop(paste("argument", sQuote("x"), "missing"))
+              stop(sprintf("argument %s missing", sQuote("x")))
           })
 

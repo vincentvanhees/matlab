@@ -8,6 +8,7 @@ std <- function(x, flag = 0) {
     if (flag != 0) {
         stop("biased standard deviation not implemented")
     }
-    sd(x)
+
+    return(sd(x))
 }
 

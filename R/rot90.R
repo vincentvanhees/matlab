@@ -5,24 +5,24 @@
 
 ##-----------------------------------------------------------------------------
 rot90 <- function(A, k = 1) {
-    if (!(is.matrix(A))) {
-        stop(paste("argument", sQuote("A"), "must be 2-D matrix"))
+    if (!is.matrix(A)) {
+        stop(sprintf("argument %s must be matrix", sQuote("A")))
     }
 
     if (!is.numeric(k)) {
-        stop(paste("argument", sQuote("k"), "must be numeric"))
+        stop(sprintf("argument %s must be numeric", sQuote("k")))
     } else if (!(length(k) == 1)) {
-        stop(paste("argument", sQuote("k"), "must be of length 1"))
+        stop(sprintf("argument %s must be of length 1", sQuote("k")))
     }
 
-    .rot90 <- function(A) {
+    rot90 <- function(A) {
         n <- matlab::size(A)[2]
 
         A <- t(A)
         return(A[n:1,])
     }
 
-    .rot180 <- function(A) {
+    rot180 <- function(A) {
         sz <- matlab::size(A)
         m <- sz[1]
         n <- sz[2]
@@ -30,21 +30,21 @@ rot90 <- function(A, k = 1) {
         return(A[m:1, n:1])
     }
 
-    .rot270 <- function(A) {
+    rot270 <- function(A) {
         m <- matlab::size(A)[1]
 
         return(t(A[m:1,]))
     }
 
-    k <- matlab::rem(k,4)
+    k <- matlab::rem(k, 4)
     if (k <= 0) {
         k <- k + 4
     }
 
     return(switch(k,
-                  .rot90(A),
-                  .rot180(A),
-                  .rot270(A),
+                  rot90(A),
+                  rot180(A),
+                  rot270(A),
                   A))
 }
 

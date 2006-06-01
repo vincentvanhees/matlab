@@ -6,6 +6,7 @@
 
 DEFAULT.COLORMAP.SIZE <- 64
 
+
 ##-----------------------------------------------------------------------------
 jet <- function(m = DEFAULT.COLORMAP.SIZE) {
     n <- matlab::ceil(m / 4)
@@ -30,7 +31,7 @@ jet <- function(m = DEFAULT.COLORMAP.SIZE) {
     J[g, 2] <- u[seq(along = g)]
     J[b, 3] <- u[seq(length(u)-length(b)+1, length(u))]
 
-    J
+    return(J)
 }
 
 
@@ -39,10 +40,10 @@ jet.colors <- function(n) {
     if ((n <- as.integer(n[1])) > 0) {
         ans <- jet(n)
 
-        rgb(red = ans[,1], green = ans[,2], blue = ans[,3])
+        return(rgb(red = ans[,1], green = ans[,2], blue = ans[,3]))
     }
     else {
-        character(0)
+        return(character(0))
     }
 }
 

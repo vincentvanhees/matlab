@@ -6,21 +6,21 @@
 ##-----------------------------------------------------------------------------
 logspace <- function(a, b, n = 50) {
     if (!is.numeric(a)) {
-        stop(paste("argument", sQuote("a"), "must be numeric"))
+        stop(sprintf("argument %s must be numeric", sQuote("a")))
     } else if (!(length(a) == 1)) {
-        stop(paste("argument", sQuote("a"), "must be of length 1"))
+        stop(sprintf("argument %s must be of length 1", sQuote("a")))
     }
 
     if (!is.numeric(b)) {
-        stop(paste("argument", sQuote("b"), "must be numeric"))
+        stop(sprintf("argument %s must be numeric", sQuote("b")))
     } else if (!(length(b) == 1)) {
-        stop(paste("argument", sQuote("b"), "must be of length 1"))
+        stop(sprintf("argument %s must be of length 1", sQuote("b")))
     }
 
     if (!is.numeric(n)) {
-        stop(paste("argument", sQuote("n"), "must be numeric"))
+        stop(sprintf("argument %s must be numeric", sQuote("n")))
     } else if (!(length(n) == 1)) {
-        stop(paste("argument", sQuote("n"), "must be of length 1"))
+        stop(sprintf("argument %s must be of length 1", sQuote("n")))
     }
 
     if (b == pi) {

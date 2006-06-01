@@ -1,9 +1,10 @@
 ###
-### FIX.R - Round toward zero.
+### FIX.R - Round toward zero
 ###
 
 
 ##-----------------------------------------------------------------------------
-fix <- function(A)
-    trunc(A)
+fix <- function(A) {
+    return(trunc(A))
+}
 
