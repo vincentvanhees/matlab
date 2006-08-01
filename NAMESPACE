@@ -1,3 +1,7 @@
+###
+### NAMESPACE
+###
+
 ## Public routines
 export(ceil)
 export(cell)

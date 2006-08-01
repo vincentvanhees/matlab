@@ -41,7 +41,7 @@ rot90 <- function(A, k = 1) {
         k <- k + 4
     }
 
-    return(switch(k,
+    return(switch(EXPR = k,
                   rot90(A),
                   rot180(A),
                   rot270(A),

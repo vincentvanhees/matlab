@@ -67,7 +67,7 @@ doPlot <- function(C, cb.loc = c("EastOutside",
     }
 
     location <- match.arg(cb.loc)
-    switch(location,
+    switch(EXPR = location,
            EastOutside  = layout.EO(),
            WestOutside  = layout.WO(),
            NorthOutside = layout.NO(),

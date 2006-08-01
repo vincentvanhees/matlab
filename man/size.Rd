@@ -8,7 +8,7 @@
 \alias{size,matrix,numeric-method}
 \alias{size,vector,missing-method}
 \alias{size,vector,numeric-method}
-\alias{size,missing-method}
+\alias{size,missing,ANY-method}
 \title{MATLAB size function}
 \description{
   Provides dimensions of \code{X}.

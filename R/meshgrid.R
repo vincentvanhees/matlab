@@ -62,7 +62,7 @@ meshgrid <- function(x, y, z, nargout = 2) {
         stop(sprintf("argument %s must be of length 1", sQuote("nargout")))
     }
 
-    return(switch(as.character(nargout),
+    return(switch(EXPR = as.character(nargout),
                   "2" = meshgrid.2d(x, y),
                   "3" = meshgrid.3d(x, y, z),
                   stop(sprintf("argument %s must be either 2 or 3",

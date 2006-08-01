@@ -13,7 +13,8 @@ setGeneric("size",
            })
 
 setMethod("size",
-          signature(X = "vector", dimen = "missing"),
+          signature(X     = "vector",
+                    dimen = "missing"),
           function(X, dimen) {
               #cat(match.call()[[1]], "(vector, missing)", "\n")
 #              return(as.size_t(length(X)))
@@ -22,49 +23,56 @@ setMethod("size",
           })
 
 setMethod("size",
-          signature(X = "matrix", dimen = "missing"),
+          signature(X     = "matrix",
+                    dimen = "missing"),
           function(X, dimen) {
               #cat(match.call()[[1]], "(matrix, missing)", "\n")
               return(as.size_t(dim(X)))
           })
 
 setMethod("size",
-          signature(X = "array", dimen = "missing"),
+          signature(X     = "array",
+                    dimen = "missing"),
           function(X, dimen) {
               #cat(match.call()[[1]], "(array, missing)", "\n")
               return(as.size_t(dim(X)))
           })
 
 setMethod("size",
-          signature(X = "vector", dimen = "numeric"),
+          signature(X     = "vector",
+                    dimen = "numeric"),
           function(X, dimen) {
               #cat(match.call()[[1]], "(vector, numeric)", "\n")
               callGeneric(matrix(X, nrow = 1), dimen)
           })
 
 setMethod("size",
-          signature(X = "matrix", dimen = "numeric"),
+          signature(X     = "matrix",
+                    dimen = "numeric"),
           function(X, dimen) {
               #cat(match.call()[[1]], "(matrix, numeric)", "\n")
               callGeneric(X, as.integer(dimen))
           })
 
 setMethod("size",
-          signature(X = "matrix", dimen = "integer"),
+          signature(X     = "matrix",
+                    dimen = "integer"),
           function(X, dimen) {
               #cat(match.call()[[1]], "(matrix, integer)", "\n")
               return(getLengthOfDimension(X, dimen))
           })
 
 setMethod("size",
-          signature(X = "array", dimen = "numeric"),
+          signature(X     = "array",
+                    dimen = "numeric"),
           function(X, dimen) {
               #cat(match.call()[[1]], "(array, numeric)", "\n")
               callGeneric(X, as.integer(dimen))
           })
 
 setMethod("size",
-          signature(X = "array", dimen = "integer"),
+          signature(X     = "array",
+                    dimen = "integer"),
           function(X, dimen) {
               #cat(match.call()[[1]],
               #    "(", data.class(X), ", ", data.class(dimen), ")", "\n")
@@ -72,12 +80,14 @@ setMethod("size",
           })
 
 setMethod("size",
-          signature(X = "missing"),
+          signature(X     = "missing",
+                    dimen = "ANY"),
           function(X, dimen) {
-              #cat(match.call()[[1]], "(missing)", "\n")
+              #cat(match.call()[[1]], "(missing, ANY)", "\n")
               stop(sprintf("argument %s missing", sQuote("X")))
           })
 
+##-----------------------------------------------------------------------------
 getLengthOfDimension <- function(X, dimen) {
     if (!is.array(X)) {
         stop(sprintf("argument %s must be matrix or array", sQuote("X")))

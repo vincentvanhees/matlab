@@ -84,7 +84,7 @@ colorbar <- function(C, location = c("EastOutside",
                         ...)
     }
 
-    switch(location,
+    switch(EXPR = location,
            EastOutside  = colorbar.EO(...),
            WestOutside  = colorbar.WO(...),
            SouthOutside = colorbar.SO(...),

@@ -1,3 +1,6 @@
+0.8-1:  Modified 'sum' to handle logicals.
+        Updated package documentation
+
 0.8-0:  Added 'cell' method
         Added 'isempty' method
         Added 'magic' method

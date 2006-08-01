@@ -76,7 +76,7 @@ fileparts <- function(pathname) {
     }
 
     if (length(tildeUser) > 0) {
-        switch(charmatch("~", c(pathstr, name)),
+        switch(EXPR = charmatch("~", c(pathstr, name)),
                pathstr <- sub(tildeUser, "~", pathstr),
                name <- sub(tildeUser, "~", name))
     }

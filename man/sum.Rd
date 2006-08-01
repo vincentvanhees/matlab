@@ -1,14 +1,13 @@
 \name{sum}
 \alias{sum}
-\alias{sum,ANY-method}
 \alias{sum,array,logical-method}
 \alias{sum,array,missing-method}
-\alias{sum,logical-method}
 \alias{sum,matrix,logical-method}
 \alias{sum,matrix,missing-method}
-\alias{sum,missing-method}
 \alias{sum,vector,logical-method}
 \alias{sum,vector,missing-method}
+\alias{sum,ANY,ANY-method}
+\alias{sum,missing,ANY-method}
 \title{MATLAB sum function}
 \description{
   Provides sum of elements.
@@ -17,7 +16,7 @@
 sum(x, na.rm = FALSE)
 }
 \arguments{
-  \item{x}{numeric to be summed}
+  \item{x}{numeric or logical to be summed}
   \item{na.rm}{logical scalar. If \code{TRUE}, remove missing values}
 }
 \details{

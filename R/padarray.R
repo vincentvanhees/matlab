@@ -56,8 +56,10 @@ setMethod("padarray",
           })
 
 setMethod("padarray",
-          signature(A       = "vector",
-                    padsize = "numeric"),
+          signature(A         = "vector",
+                    padsize   = "numeric",
+                    padval    = "ANY",
+                    direction = "ANY"),
           function(A, padsize, padval, direction) {
               #cat(match.call()[[1]], "(vector, numeric, ANY, ANY)", "\n")
               callGeneric(matrix(A, nrow = 1), padsize, padval, direction)
@@ -107,7 +109,7 @@ padarray0 <- function(a,
                       }
              matlab:::mkconstarray(data.class(a), padval, sizeB)
          } else {
-             switch(method,
+             switch(EXPR = method,
                     constant  = constantPad(a, padsize, padval, direction),
                     circular  = circularPad(a, padsize, direction),
                     symmetric = symmetricPad(a, padsize, direction),
@@ -132,7 +134,7 @@ constantPad <- function(a, padsize, padval, direction) {
     sizeB <- matlab::zeros(1, numDims)
     for (k in seq(1, numDims)) {
         M <- matlab::size(a, k)
-        switch(direction,
+        switch(EXPR = direction,
                pre  = {
                           idx[[k]] <- (1:M) + padsize[k]
                           sizeB[k] <- M + padsize[k]
@@ -166,7 +168,7 @@ circularPad <- function(a, padsize, direction) {
         M <- matlab::size(a, k)
         dimNums <- 1:M
         p <- padsize[k]
-        switch(direction,
+        switch(EXPR = direction,
                pre  = {
                           idx[[k]] <- dimNums[matlab::mod(-p:(M-1), M) + 1]
                       },
@@ -193,7 +195,7 @@ symmetricPad <- function(a, padsize, direction) {
         M <- matlab::size(a, k)
         dimNums <- c(1:M, seq(from = M, to = 1, by = -1))
         p <- padsize[k]
-        switch(direction,
+        switch(EXPR = direction,
                pre  = {
                           idx[[k]] <- dimNums[matlab::mod(-p:(M-1), 2*M) + 1]
                       },
@@ -224,7 +226,7 @@ replicatePad <- function(a, padsize, direction) {
                       } else {
                           NULL
                       }
-        switch(direction,
+        switch(EXPR = direction,
                pre  = {
                           idx[[k]] <- c(onesVector, 1:M)
                       },

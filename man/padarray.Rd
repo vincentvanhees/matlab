@@ -3,7 +3,7 @@
 \alias{padarray,array,numeric,missing,missing-method}
 \alias{padarray,array,numeric,ANY,character-method}
 \alias{padarray,array,numeric,character,character-method}
-\alias{padarray,vector,numeric-method}
+\alias{padarray,vector,numeric,ANY,ANY-method}
 \title{MATLAB padarray function}
 \description{
   Pad array.
