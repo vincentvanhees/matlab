@@ -27,10 +27,6 @@ colorbar(C, location = c("EastOutside", "WestOutside", "NorthOutside", "SouthOut
   \code{\link[graphics]{par}}
 }
 \examples{
-grdev <- function(...) {
-    get(getOption("device"))(...)
-}
-
 doPlot <- function(C, cb.loc = c("EastOutside",
                                  "WestOutside",
                                  "NorthOutside",
@@ -81,7 +77,7 @@ values <- matrix(c(seq(1,  5, by = 1),
                    seq(2, 10, by = 2),
                    seq(3, 15, by = 3)), nrow = 3, byrow = TRUE)
 
-grdev(width = 8, height = 7)
+X11(width=8, height=7)
 doPlot(values, "EastOutside", col = jet.colors(16))
 }
 \author{P. Roebuck, \email{roebuck@mdanderson.org}}

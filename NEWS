@@ -1,3 +1,5 @@
+0.8-2:  Removed 'grdev' method from 'colorbar' test code
+
 0.8-1:  Modified 'sum' to handle logicals.
         Updated package documentation
 
@@ -33,9 +35,9 @@
 0.7-7:	Added 'pascal' method
       	Added 'linspace' method
       	Added 'logspace' method
-	Converted 'size' method to S4
-	Added 'dimen' parameter to 'size' method
-	Added 'echo' parameter to 'toc' method
+        Converted 'size' method to S4
+        Added 'dimen' parameter to 'size' method
+        Added 'echo' parameter to 'toc' method
 
 0.7-6:  Initial release to CRAN
 
