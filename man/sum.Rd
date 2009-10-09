@@ -13,7 +13,7 @@
   Provides sum of elements.
 }
 \usage{
-sum(x, na.rm = FALSE)
+sum(x, na.rm=FALSE)
 }
 \arguments{
   \item{x}{numeric or logical to be summed}
@@ -31,6 +31,8 @@ sum(x, na.rm = FALSE)
 sum(1:9)
 sum(matrix(1:9, 3, 3))
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{arith}
 

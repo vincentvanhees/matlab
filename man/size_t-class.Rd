@@ -22,6 +22,8 @@ Class \code{"numeric"}, by class \code{"integer"}.
 \note{
   Internal class supporting \code{\link{size}}.
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{classes}
 

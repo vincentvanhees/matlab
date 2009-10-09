@@ -21,6 +21,8 @@ pathsep
 \seealso{
   \code{\link{filesep}}
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{file}
 

@@ -10,8 +10,8 @@
   \tabular{ll}{
     Package: \tab matlab\cr
     Type: \tab Package\cr
-    Version: \tab 0.8-2\cr
-    Date: \tab 2008-10-14\cr
+    Version: \tab 0.8-3\cr
+    Date: \tab 2009-10-09\cr
     License: \tab See COPYING for license information\cr
   }
   They are no more complete than absolutely necessary and are quite
@@ -25,6 +25,8 @@
   In certain cases, these may not correspond exactly with MATLAB API
   as sometimes it just wasn't possible.
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{package}
 

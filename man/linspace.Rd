@@ -5,7 +5,7 @@
   Generate linearly spaced vectors.
 }
 \usage{
-linspace(a, b, n = 100)
+linspace(a, b, n=100)
 }
 \arguments{
   \item{a}{numeric scalar specifying starting point}
@@ -26,6 +26,8 @@ linspace(a, b, n = 100)
 \examples{
 linspace(1, 10, 4)
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{manip}
 

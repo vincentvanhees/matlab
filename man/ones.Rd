@@ -26,6 +26,8 @@ ones(3, 3)                      # same thing
 ones(size(matrix(NA, 3, 3)))    # same thing
 zeros(3)
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{array}
 

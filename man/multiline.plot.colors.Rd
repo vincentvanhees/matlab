@@ -31,9 +31,11 @@ multiline.plot.colors()
 }
 \examples{
 require(graphics)
-x <- matrix(1:16, nrow = 2, byrow = TRUE)
-matplot(x, type = "l", col = multiline.plot.colors())
+x <- matrix(1:16, nrow=2, byrow=TRUE)
+matplot(x, type="l", col=multiline.plot.colors())
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{color}
 

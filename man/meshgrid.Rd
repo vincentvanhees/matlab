@@ -5,7 +5,7 @@
   Generate X and Y matrices for three-dimensional plots.
 }
 \usage{
-meshgrid(x, y, z, nargout = 2)
+meshgrid(x, y, z, nargout=2)
 }
 \arguments{
   \item{x, y, z}{numeric vectors of values}
@@ -32,13 +32,13 @@ meshgrid(x, y, z, nargout = 2)
 \note{
   Limited to two- or three-dimensional Certesian space.
 }
-\seealso{ 
-}   
 \examples{
 meshgrid(1:3, 10:14)            # example 1
 meshgrid(1:3)                   # example 2
 meshgrid(5:8, 10:14, 2:3, 3)    # example 3
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{array}
 

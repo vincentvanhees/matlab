@@ -5,7 +5,7 @@
   Generate logarithmically spaced vectors.
 }
 \usage{
-logspace(a, b, n = 50)
+logspace(a, b, n=50)
 }
 \arguments{
   \item{a}{numeric scalar specifying exponent for starting point}
@@ -26,6 +26,8 @@ logspace(a, b, n = 50)
 \examples{
 logspace(1, pi, 36)
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{manip}
 

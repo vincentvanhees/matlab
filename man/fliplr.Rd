@@ -34,9 +34,11 @@ flipud(object)
 \examples{
 fliplr(1:9)
 flipud(1:9)	# same as previous since vectors have no orientation in R
-fliplr(matrix(1:9, 3, 3, byrow = TRUE))
-flipud(matrix(1:9, 3, 3, byrow = TRUE))
+fliplr(matrix(1:9, 3, 3, byrow=TRUE))
+flipud(matrix(1:9, 3, 3, byrow=TRUE))
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{array}
 

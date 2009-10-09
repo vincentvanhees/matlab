@@ -24,6 +24,8 @@ ceil(x)
 \examples{
 ceil(c(0.9, 1.3, 2.4))
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{arith}
 

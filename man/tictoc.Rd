@@ -7,8 +7,8 @@
   updates the elapsed time since the timer was started. 
 }
 \usage{
-tic(gcFirst = FALSE)
-toc(echo = TRUE)
+tic(gcFirst=FALSE)
+toc(echo=TRUE)
 }
 \arguments{
   \item{gcFirst}{logical scalar. If \code{TRUE}, perform garbage collection
@@ -24,6 +24,8 @@ tic()
 for(i in 1:100) mad(runif(1000))	# kill time
 toc()
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{utilities}
 

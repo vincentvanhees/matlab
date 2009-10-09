@@ -27,6 +27,8 @@ repmat(1, 3, 3)                    # same thing
 repmat(1, size(matrix(NA, 3, 3)))  # same thing
 repmat(matrix(1:4, 2, 2), 3)
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{array}
 

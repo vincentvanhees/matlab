@@ -6,7 +6,7 @@
   displays the image.
 }
 \usage{
-imagesc(x = seq(ncol(C)), y = seq(nrow(C)), C, col = jet.colors(12), \dots)
+imagesc(x=seq(ncol(C)), y=seq(nrow(C)), C, col=jet.colors(12), \dots)
 }
 \arguments{
   \item{x,y}{locations of grid lines at which the values in \code{C} are
@@ -34,11 +34,13 @@ imagesc(x = seq(ncol(C)), y = seq(nrow(C)), C, col = jet.colors(12), \dots)
   \code{\link[graphics]{par}}
 }
 \examples{
-values <- matrix(c(seq(1,  5, by = 1),
-                   seq(2, 10, by = 2),
-                   seq(3, 15, by = 3)), nrow = 3, byrow = TRUE)
-imagesc(values, xlab = "cols", ylab = "rows", col = jet.colors(16))
+values <- matrix(c(seq(1,  5, by=1),
+                   seq(2, 10, by=2),
+                   seq(3, 15, by=3)), nrow=3, byrow=TRUE)
+imagesc(values, xlab="cols", ylab="rows", col=jet.colors(16))
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{hplot}
 

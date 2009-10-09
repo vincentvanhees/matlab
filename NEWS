@@ -1,6 +1,8 @@
+0.8-3:  Updated package documentation
+
 0.8-2:  Removed 'grdev' method from 'colorbar' test code
 
-0.8-1:  Modified 'sum' to handle logicals.
+0.8-1:  Modified 'sum' to handle logicals
         Updated package documentation
 
 0.8-0:  Added 'cell' method
@@ -12,7 +14,7 @@
         Added 'padarray' method
         Added 'reshape' method
         Added 'strcmp' method
-        Modified 'repmat' to handle character vectors.
+        Modified 'repmat' to handle character vectors
         Updated package documentation
 
 0.7-9:	Fixed quoting in help message

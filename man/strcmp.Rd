@@ -25,6 +25,8 @@ strcmp(S, T)
 strcmp("foo", "bar")  # FALSE
 strcmp(c("yes", "no"), c("yes", "no"))	# TRUE
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{character}
 

@@ -22,6 +22,8 @@ filesep
   \code{\link{fullfile}},
   \code{\link{pathsep}}
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{file}
 

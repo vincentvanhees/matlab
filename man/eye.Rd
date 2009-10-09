@@ -21,6 +21,8 @@ eye(m, n)
 \examples{
 eye(3)
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{array}
 

@@ -24,8 +24,10 @@ jet.colors(n)
 \examples{
 require(graphics)
 x <- 1:16
-pie(x, col = jet.colors(length(x)))
+pie(x, col=jet.colors(length(x)))
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{color}
 

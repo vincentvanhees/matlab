@@ -5,7 +5,7 @@
   Computes the standard deviation of the values of \code{x}.
 }
 \usage{
-std(x, flag = 0)
+std(x, flag=0)
 }
 \arguments{
   \item{x}{numeric vector or matrix}
@@ -23,6 +23,8 @@ std(x, flag = 0)
 \examples{
 std(1:2) ^ 2
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{univar}
 

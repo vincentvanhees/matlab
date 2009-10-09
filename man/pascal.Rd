@@ -5,7 +5,7 @@
   Generate Pascal matrix.
 }
 \usage{
-pascal(n, k = 0)
+pascal(n, k=0)
 }
 \arguments{
   \item{n}{numeric scalar specifying order}
@@ -28,6 +28,8 @@ are 0, 1, or 2}
 pascal(4)
 pascal(3, 2)
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{array}
 

@@ -14,7 +14,7 @@ fullfile(\dots)
   Builds a full filename from the directories and filename specified. This
   is conceptually equivalent to \preformatted{
 
-    paste(dir1, dir2, dir3, filename, sep = \link{filesep})
+    paste(dir1, dir2, dir3, filename, sep=\link{filesep})
 
   }
   with care taken to handle cases when directories begin or end with a
@@ -31,6 +31,8 @@ fullfile(\dots)
 \examples{
 fullfile("", "etc", "profile")	# /etc/profile
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{file}
 

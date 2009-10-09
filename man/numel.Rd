@@ -22,6 +22,8 @@ numel(A, varargin)
 numel(2:9)	# 8
 numel(magic(4))	# 16
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{array}
 

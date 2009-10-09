@@ -5,7 +5,7 @@
   Rotates matrix counterclockwise \code{k*90} degrees.
 }
 \usage{
-rot90(A, k = 1)
+rot90(A, k=1)
 }
 \arguments{
   \item{A}{matrix to be rotated}
@@ -25,6 +25,8 @@ rot90(A, k = 1)
 \examples{
 rot90(matrix(1:4, 2, 2))
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{array}
 

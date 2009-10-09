@@ -23,6 +23,8 @@ rem(5, 3)
 mod(-5, 3)
 rem(-5, 3)
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{arith}
 

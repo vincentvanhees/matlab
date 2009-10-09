@@ -36,8 +36,10 @@ fileparts(pathname)
 \examples{
 ## Rename dot-txt file as dot-csv
 ans <- fileparts("/home/luser/foo.txt")
-fullfile(ans$pathstr, paste(ans$name, ".csv", sep = ""))   # /home/luser/foo.csv
+fullfile(ans$pathstr, paste(ans$name, "csv", sep="."))   # /home/luser/foo.csv
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{file}
 

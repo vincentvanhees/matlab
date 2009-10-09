@@ -42,6 +42,8 @@ size(matrix(1:8, 2, 4))		# 2 4
 size(matrix(1:8, 2, 4), 2)	# 4
 size(matrix(1:8, 2, 4), 3)	# 1
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{array}
 

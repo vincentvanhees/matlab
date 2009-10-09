@@ -9,7 +9,7 @@
   Pad array.
 }
 \usage{
-padarray(A, padsize, padval = 0, direction = c("both", "pre", "post"))
+padarray(A, padsize, padval=0, direction=c("both", "pre", "post"))
 }
 \arguments{
   \item{A}{vector, matrix, or array to be padded}
@@ -49,6 +49,8 @@ padarray(1:4, c(0, 3), "symmetric", "pre")	# 3 2 1 [1 2 3 4]
 padarray(letters[1:5], c(0, 3), "replicate")	# a a a [a b c d e] e e e
 padarray(letters[1:5], c(0, 3), "circular", "post")	# [a b c d e] a b c
 }
-\author{P. Roebuck, \email{roebuck@mdanderson.org}}
+\author{
+  P. Roebuck \email{roebuck@mdanderson.org}
+}
 \keyword{array}
 
