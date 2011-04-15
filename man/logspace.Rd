@@ -18,7 +18,8 @@ logspace(a, b, n=50)
 }
 \value{
   Returns vector containing containing \code{n} points logarithmically
-  spaced between decades \eqn{10^\code{a}} and \eqn{10^\code{b}}.
+  spaced between decades \eqn{10^\code{a}} and \eqn{10^\code{b}}. For
+  \eqn{n < 2}, \code{b} is returned.
 }
 \seealso{
   \code{\link{linspace}}
@@ -27,7 +28,7 @@ logspace(a, b, n=50)
 logspace(1, pi, 36)
 }
 \author{
-  P. Roebuck \email{roebuck@mdanderson.org}
+  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{manip}
 

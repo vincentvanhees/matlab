@@ -31,7 +31,7 @@ magic(n)
 magic(3)
 }
 \author{
-  P. Roebuck \email{roebuck@mdanderson.org}
+  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{array}
 

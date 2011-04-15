@@ -25,7 +25,7 @@ fix(A)
 fix(c(1.3, 2.5, 3.7))
 }
 \author{
-  P. Roebuck \email{roebuck@mdanderson.org}
+  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{arith}
 

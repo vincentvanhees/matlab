@@ -25,7 +25,7 @@ for(i in 1:100) mad(runif(1000))	# kill time
 toc()
 }
 \author{
-  P. Roebuck \email{roebuck@mdanderson.org}
+  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{utilities}
 

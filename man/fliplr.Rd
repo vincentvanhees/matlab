@@ -38,7 +38,7 @@ fliplr(matrix(1:9, 3, 3, byrow=TRUE))
 flipud(matrix(1:9, 3, 3, byrow=TRUE))
 }
 \author{
-  P. Roebuck \email{roebuck@mdanderson.org}
+  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{array}
 

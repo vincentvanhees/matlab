@@ -40,7 +40,7 @@ values <- matrix(c(seq(1,  5, by=1),
 imagesc(values, xlab="cols", ylab="rows", col=jet.colors(16))
 }
 \author{
-  P. Roebuck \email{roebuck@mdanderson.org}
+  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{hplot}
 

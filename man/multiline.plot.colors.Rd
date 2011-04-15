@@ -18,7 +18,7 @@ multiline.plot.colors()
 \value{
   Returns vector of color names. This can be used either to create
   a user-defined color palette for subsequent graphics, a \code{col=}
-  specification in graphics functions or in \code{par}.
+  specification in graphics functions, or in \code{par}.
 }
 \note{
   Method should be considered experimental and will most likely be removed
@@ -35,7 +35,7 @@ x <- matrix(1:16, nrow=2, byrow=TRUE)
 matplot(x, type="l", col=multiline.plot.colors())
 }
 \author{
-  P. Roebuck \email{roebuck@mdanderson.org}
+  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{color}
 

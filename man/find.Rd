@@ -22,7 +22,7 @@ find(-3:3 >= 0)
 find(c(0, 1, 0, 2, 3))
 }
 \author{
-  P. Roebuck \email{roebuck@mdanderson.org}
+  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{logic}
 \keyword{attribute}

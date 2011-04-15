@@ -23,10 +23,11 @@ linspace <- function(a, b, n = 100) {
         stop(sprintf("argument %s must be of length 1", sQuote("n")))
     }   
 
-    return(if (n < 2) {
-               b
-           } else {
-               seq(a, b, length = n)
-           })
+    n <- floor(n)    ## Undocumented but required
+    if (n < 2) {
+        b
+    } else {
+        seq(a, b, length = n)
+    }
 }
 

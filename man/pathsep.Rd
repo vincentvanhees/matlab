@@ -22,7 +22,7 @@ pathsep
   \code{\link{filesep}}
 }
 \author{
-  P. Roebuck \email{roebuck@mdanderson.org}
+  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{file}
 

@@ -25,7 +25,7 @@ ceil(x)
 ceil(c(0.9, 1.3, 2.4))
 }
 \author{
-  P. Roebuck \email{roebuck@mdanderson.org}
+  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{arith}
 

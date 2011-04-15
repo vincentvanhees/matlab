@@ -83,7 +83,7 @@ X11(width=8, height=7)
 doPlot(values, "EastOutside", col=jet.colors(16))
 }
 \author{
-  P. Roebuck \email{roebuck@mdanderson.org}
+  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{hplot}
 

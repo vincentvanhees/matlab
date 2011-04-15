@@ -25,7 +25,7 @@ cell(3, 3)			# same thing
 cell(size(matrix(NA, 3, 3)))	# same thing
 }
 \author{
-  P. Roebuck \email{roebuck@mdanderson.org}
+  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{array}
 \keyword{list}

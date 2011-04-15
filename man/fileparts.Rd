@@ -39,7 +39,7 @@ ans <- fileparts("/home/luser/foo.txt")
 fullfile(ans$pathstr, paste(ans$name, "csv", sep="."))   # /home/luser/foo.csv
 }
 \author{
-  P. Roebuck \email{roebuck@mdanderson.org}
+  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{file}
 

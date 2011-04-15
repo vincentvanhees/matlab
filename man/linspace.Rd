@@ -14,6 +14,8 @@ linspace(a, b, n=100)
 }
 \details{
   Similar to colon operator but gives direct control over the number of points.
+  Note also that although MATLAB doesn't specifically document this, the number
+  of points generated is actually \code{floor(n)}.
 }
 \value{
   Returns vector containing containing \code{n} points linearly spaced
@@ -27,7 +29,7 @@ linspace(a, b, n=100)
 linspace(1, 10, 4)
 }
 \author{
-  P. Roebuck \email{roebuck@mdanderson.org}
+  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{manip}
 

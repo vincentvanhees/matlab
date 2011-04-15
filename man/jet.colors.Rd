@@ -14,7 +14,7 @@ jet.colors(n)
 \value{
   Returns vector of \code{n} color names. This can be used either to create
   a user-defined color palette for subsequent graphics, a \code{col=}
-  specification in graphics functions or in \code{par}.
+  specification in graphics functions, or in \code{par}.
 }
 \seealso{
   \code{\link[grDevices]{palette}},
@@ -27,7 +27,7 @@ x <- 1:16
 pie(x, col=jet.colors(length(x)))
 }
 \author{
-  P. Roebuck \email{roebuck@mdanderson.org}
+  P. Roebuck \email{proebuck@mdanderson.org}
 }
 \keyword{color}
 
