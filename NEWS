@@ -6,6 +6,22 @@
         **************************************************
 
 
+                CHANGES IN R VERSION 0.8.7
+
+
+NEW FEATURES
+
+    o   Added 'factors' method.
+
+    o   Added 'hilb' method.
+
+    o   Added 'isprime' method.
+
+    o   Added 'primes' method.
+
+    o   Added 'rosser' method.
+
+
                 CHANGES IN R VERSION 0.8.6
 
 

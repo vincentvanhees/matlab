@@ -9,9 +9,10 @@ colorbar(C, location=c("EastOutside", "WestOutside", "NorthOutside", "SouthOutsi
 }
 \arguments{
   \item{C}{numeric vector or matrix representing data values}
-  \item{location}{character scalar indicating desired orientation with respect to the axes}
-  \item{\dots}{graphical parameters for \link[graphics]{image} may also be passed
-    as arguments to this method}
+  \item{location}{character scalar indicating desired orientation with respect
+    to the axes}
+  \item{\dots}{graphical parameters for \link[graphics]{image} may also be
+    passed as arguments to this method}
 }
 \details{
   The values of the elements of \code{C} are indices into the current
