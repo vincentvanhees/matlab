@@ -6,6 +6,23 @@
         **************************************************
 
 
+                CHANGES IN R VERSION 0.8.8
+
+
+NEW FEATURES
+
+    o   Added 'vander' method.
+
+    o   Added 'pow2' method.
+
+    o   Added 'nextpow2' method.
+
+
+BUG FIXES
+
+    o   Additional argument checking for 'isprime' method.
+
+
                 CHANGES IN R VERSION 0.8.7
 
 

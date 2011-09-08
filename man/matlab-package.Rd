@@ -10,8 +10,8 @@
   \tabular{ll}{
     Package: \tab matlab\cr
     Type: \tab Package\cr
-    Version: \tab 0.8.7\cr
-    Date: \tab 2011-07-07\cr
+    Version: \tab 0.8.8\cr
+    Date: \tab 2011-09-08\cr
     License: \tab See COPYING for license information\cr
   }
   They are no more complete than absolutely necessary and are quite

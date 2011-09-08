@@ -13,9 +13,11 @@ isprime <- function(x) {
         return(integer(0))
     }
 
-    if (any(x < 0) | any(x != round(x))) {
-## :TODO: Mention the integer requirement...
+    if (any(x < 0)) {
         stop(sprintf("each element of %s must be a nonnegative quantity",
+                     sQuote("x")))
+    } else if (any(x != round(x))) {
+        stop(sprintf("each element of %s must be a non-fractional quantity",
                      sQuote("x")))
     }
 
