@@ -16,21 +16,24 @@
     verbose <- getOption("verbose")
     if (verbose) {
         local({
-            libraryPkgName <- function(pkgname, sep = "_") {
-                unlist(strsplit(pkgname, sep, fixed = TRUE))[1]
+            libraryPkgName <- function(pkgname, sep="_") {
+                unlist(strsplit(pkgname, sep, fixed=TRUE))[1]
             }
             packageDescription <- function(pkgname) {
                 fieldnames <- c("Title", "Version")
-                descfile <- file.path(libname, pkgname, "DESCRIPTION")
-                desc <- as.list(read.dcf(descfile, fieldnames))
-                names(desc) <- fieldnames
-                return(desc)
+                metafile <- file.path(libname, pkgname, "DESCRIPTION")
+                meta <- as.list(read.dcf(metafile, fieldnames))
+                names(meta) <- fieldnames
+                return(meta)
             }
 
-            desc <- packageDescription(pkgname)
-            message(sprintf("%s, version %s", desc$Title, desc$Version))
-            message(sprintf("Type library(help=%s) to see package documentation",
-                            libraryPkgName(pkgname)))
+            meta <- packageDescription(pkgname)
+            msg <- sprintf("%s, version %s",
+                           meta$Title, meta$Version)
+            packageStartupMessage(msg)
+            msg <- sprintf("Type library(help=%s) to see package documentation",
+                           libraryPkgName(pkgname))
+            packageStartupMessage(msg)
         })
     }
 }
@@ -46,10 +49,10 @@
     environment(.MatlabNamespaceEnv) <- asNamespace("matlab")
 
     ## Load internal variables
-    assign("savedTime", 0, envir = .MatlabNamespaceEnv)
+    assign("savedTime", 0, envir=.MatlabNamespaceEnv)
 
     ## Allow no changes or additions to environment
-    lockEnvironment(.MatlabNamespaceEnv, bindings = TRUE)
+    lockEnvironment(.MatlabNamespaceEnv, bindings=TRUE)
 
     ## Only allow internal vars to change
     unlockBinding("savedTime", .MatlabNamespaceEnv)

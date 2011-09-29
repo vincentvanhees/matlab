@@ -6,6 +6,14 @@
         **************************************************
 
 
+                CHANGES IN R VERSION 0.8.9
+
+
+NEW FEATURES
+
+    o   Converted .onAttach() output to use packageStartupMessage() method.
+
+
                 CHANGES IN R VERSION 0.8.8
 
 
@@ -67,7 +75,7 @@ BUG FIXES
 
 NEW FEATURES
 
-    o   Reimplemented 'logspace' as '10 ^ logspace(a,b,n)' to consolidate.
+    o   Reimplemented 'logspace' as '10 ^ linspace(a,b,n)' to consolidate.
 
 
                 CHANGES IN R VERSION 0.8.3

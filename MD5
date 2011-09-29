@@ -1,7 +1,7 @@
-9299dcf7c05a279e792b3537ade785ba *DESCRIPTION
+3b82743cf958ca661d811ced41e7d7aa *DESCRIPTION
 d9d4ff3ddb4b7c81c9e9f3ba42b1ea98 *LICENSE
 3a4f1de5d30b9e7cde70cbb1f489e376 *NAMESPACE
-aa9a443b3a5e1fb6504d55012f80736d *NEWS
+2a6313ab3ebc47adb108805d3575d35f *NEWS
 22e9a71f1734895630769cd7278051ab *R/ceil.R
 3b0938e89f0ded93273d46d31ec3d432 *R/cell.R
 51f651865e235040fa69792184b1e27b *R/colorbar.R
@@ -48,7 +48,7 @@ eb3d5d51e9b2c0bc9b039536a78a194a *R/strcmp.R
 cf032e9f7d3d029596982d7ebb013d5a *R/tictoc.R
 dd553a4193b16bbce390826b2e5f7d56 *R/vander.R
 b521cc12db11001a15ae131d36461ca9 *R/zeros.R
-21002625c857c8ec0ded637df06cc651 *R/zzz.R
+5bbd5b88f3edf7d269801ca47e4c8cf6 *R/zzz.R
 d7770e99cbc3f0c95d129c52ab3f72b1 *man/ceil.Rd
 da397c59d094672383d081ef228e86bc *man/cell.Rd
 829103119414ea65ac5872d50126ba6a *man/colorbar.Rd
@@ -68,7 +68,7 @@ f824b3a841ae8fc37c42c7b1bda6f574 *man/jet.colors.Rd
 a8b457a03ac6c64e84eb43e44b8eac74 *man/linspace.Rd
 047543b0d0f722cbc1799cf5ea5dfff6 *man/logspace.Rd
 399c2db96f8f34a89eaefcd1db0e3cf5 *man/magic.Rd
-387eedf03dd73f48a78b42352aa1488a *man/matlab-package.Rd
+bfb6a76fa3abb8ed2b43d131b3b6228b *man/matlab-package.Rd
 d1ab6036468e413bf09f6f1f39c65605 *man/meshgrid.Rd
 7103e5043034aea1f5ada9ed65210939 *man/mod.Rd
 f13d14604651227263be181d2f5ab509 *man/multiline.plot.colors.Rd
