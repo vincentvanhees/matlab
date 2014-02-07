@@ -1,5 +1,7 @@
 ###
-### LINSPACE.R - Generate linearly spaced vectors
+### $Id: linspace.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Generate linearly spaced vectors.
 ###
 
 

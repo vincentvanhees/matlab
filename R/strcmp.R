@@ -1,5 +1,7 @@
 ###
-### STRCMP.R - Compare strings
+### $Id: strcmp.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Compare strings.
 ###
 
 

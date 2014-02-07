@@ -1,3 +1,5 @@
+% $Id: size_t-class.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{size_t-class}
 \alias{size_t-class}
 \docType{class}

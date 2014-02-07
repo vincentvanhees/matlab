@@ -1,11 +1,13 @@
 ###
-### EYE.R - Create an identity matrix
+### $Id: eye.R 55 2014-02-06 16:41:28Z plroebuck $
+###
+### Create an identity matrix.
 ###
 
 
 ##-----------------------------------------------------------------------------
 eye <- function(m, n) {
-    if (matlab:::is.size_t(m)) {
+    if (is.size_t(m)) {
         m <- as.integer(m)
     }
 

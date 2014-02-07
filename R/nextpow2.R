@@ -1,5 +1,7 @@
 ###
-### NEXTPOW2.R - Next higher power of 2
+### $Id: nextpow2.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Next higher power of 2.
 ###
 
 

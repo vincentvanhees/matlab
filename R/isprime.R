@@ -1,5 +1,7 @@
 ###
-### ISPRIME.R - Array elements that are prime numbers
+### $Id: isprime.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Array elements that are prime numbers.
 ###
 
 

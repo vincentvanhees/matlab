@@ -1,5 +1,7 @@
 ###
-### POW2.R  Raise 2 to some power
+### $Id: pow2.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Raise 2 to some power.
 ###
 
 

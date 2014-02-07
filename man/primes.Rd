@@ -1,3 +1,5 @@
+% $Id: primes.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{primes}
 \alias{primes}
 \title{MATLAB primes function}

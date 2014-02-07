@@ -1,5 +1,7 @@
 ###
-### MKCONSTARRAY.R - Create a constant array of specified class
+### $Id: mkconstarray.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Create a constant array of specified class.
 ###
 
 

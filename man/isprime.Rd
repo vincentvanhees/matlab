@@ -1,3 +1,5 @@
+% $Id: isprime.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{isprime}
 \alias{isprime}
 \title{MATLAB isprime function}

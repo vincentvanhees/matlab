@@ -1,5 +1,7 @@
 ###
-### VANDER.R - Returns the Vandermonde matrix
+### $Id: vander.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Returns the Vandermonde matrix.
 ###
 
 

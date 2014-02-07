@@ -1,8 +1,8 @@
 ###
-### FLIPUD.R - Flip matrices up-down
+### $Id: flipud.R 48 2014-02-05 20:50:54Z plroebuck $
 ###
-
-library(methods)
+### Flip matrices up-down.
+###
 
 
 ##-----------------------------------------------------------------------------

@@ -1,3 +1,5 @@
+% $Id: logspace.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{logspace}
 \alias{logspace}
 \title{MATLAB logspace function}

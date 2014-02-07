@@ -1,5 +1,7 @@
 ###
-### CEIL.R - Rounds to the nearest integer
+### $Id: ceil.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Rounds to the nearest integer.
 ###
 
 

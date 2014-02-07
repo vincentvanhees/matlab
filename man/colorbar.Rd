@@ -1,3 +1,5 @@
+% $Id: colorbar.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{colorbar}
 \alias{colorbar}
 \title{MATLAB colorbar function}
@@ -80,7 +82,7 @@ values <- matrix(c(seq(1,  5, by=1),
                    seq(2, 10, by=2),
                    seq(3, 15, by=3)), nrow=3, byrow=TRUE)
 
-X11(width=8, height=7)
+dev.new(width=8, height=7)
 doPlot(values, "EastOutside", col=jet.colors(16))
 }
 \author{

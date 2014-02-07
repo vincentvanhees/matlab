@@ -1,3 +1,5 @@
+% $Id: sum.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{sum}
 \alias{sum}
 \alias{sum,array,logical-method}

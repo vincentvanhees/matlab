@@ -1,3 +1,5 @@
+% $Id: nextpow2.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{nextpow2}
 \alias{nextpow2}
 \title{MATLAB nextpow2 function}

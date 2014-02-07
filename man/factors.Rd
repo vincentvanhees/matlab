@@ -1,3 +1,5 @@
+% $Id: factors.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{factors}
 \alias{factors}
 \title{MATLAB factor function}

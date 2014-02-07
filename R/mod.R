@@ -1,5 +1,7 @@
 ###
-### MOD.R - Modulus after division
+### $Id: mod.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Modulus after division.
 ###
 
 

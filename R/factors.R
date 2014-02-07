@@ -1,5 +1,7 @@
 ###
-### FACTORS.R  Factorize natural number
+### $Id: factors.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Factorize natural number.
 ###
 
 

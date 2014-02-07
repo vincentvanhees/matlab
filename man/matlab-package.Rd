@@ -1,3 +1,5 @@
+% $Id: matlab-package.Rd 57 2014-02-08 00:53:24Z plroebuck $
+
 \name{matlab-package}
 \alias{matlab-package}
 \docType{package}
@@ -10,9 +12,9 @@
   \tabular{ll}{
     Package: \tab matlab\cr
     Type: \tab Package\cr
-    Version: \tab 0.8.9\cr
-    Date: \tab 2011-09-29\cr
-    License: \tab See COPYING for license information\cr
+    Version: \tab 1.0.1\cr
+    Date: \tab 2014-02-07\cr
+    License: \tab Artistic-2.0\cr
   }
   They are no more complete than absolutely necessary and are quite
   possibly broken for fringe cases.

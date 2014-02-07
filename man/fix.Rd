@@ -1,3 +1,5 @@
+% $Id: fix.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{fix}
 \alias{fix}
 \title{MATLAB fix function}

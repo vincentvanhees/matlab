@@ -1,5 +1,7 @@
 ###
-### FILEPARTS.R - Return filename parts
+### $Id: fileparts.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Return filename parts.
 ###
 
 

@@ -1,8 +1,8 @@
-#
-# PADARRAY.R - Pad a vector
-#
-
-library(methods)
+###
+### $Id: padarray.R 55 2014-02-06 16:41:28Z plroebuck $
+###
+### Pad a vector.
+###
 
 
 ##-----------------------------------------------------------------------------
@@ -107,7 +107,7 @@ padarray0 <- function(a,
                       } else {
                           matlab::size(a) + padsize
                       }
-             matlab:::mkconstarray(data.class(a), padval, sizeB)
+             mkconstarray(data.class(a), padval, sizeB)
          } else {
              switch(EXPR = method,
                     constant  = constantPad(a, padsize, padval, direction),
@@ -151,7 +151,7 @@ constantPad <- function(a, padsize, padval, direction) {
 
     ## Initialize output array with padding value.
     ## Make sure output array is same type as the input.
-    b <- matlab:::mkconstarray(mode(a), padval, sizeB)
+    b <- mkconstarray(mode(a), padval, sizeB)
 
     return(do.call("[<-", c(list(b), idx, list(a))))
 }

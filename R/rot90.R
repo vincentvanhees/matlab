@@ -1,5 +1,7 @@
 ###
-### ROT90.R - Rotates matrix counterclockwise k*90 degrees
+### $Id: rot90.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Rotates matrix counterclockwise k*90 degrees.
 ###
 
 

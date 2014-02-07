@@ -1,3 +1,5 @@
+% $Id: size.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{size}
 \alias{size}
 \alias{size,array,integer-method}

@@ -1,3 +1,5 @@
+% $Id: imagesc.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{imagesc}
 \alias{imagesc}
 \title{MATLAB imagesc function}

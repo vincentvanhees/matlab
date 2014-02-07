@@ -1,5 +1,7 @@
 ###
-### FULLFILE.R - Build full filename from parts
+### $Id: fullfile.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Build full filename from parts.
 ###
 
 

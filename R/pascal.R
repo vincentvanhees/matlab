@@ -1,5 +1,7 @@
 ###
-### PASCAL.R - Create Pascal matrix
+### $Id: pascal.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Create Pascal matrix.
 ###
 
 

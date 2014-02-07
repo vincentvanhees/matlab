@@ -1,5 +1,7 @@
 ###
-### MESHGRID.R - Generate X and Y matrices for three-dimensional plots
+### $Id: meshgrid.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Generate X and Y matrices for three-dimensional plots.
 ###
 
 

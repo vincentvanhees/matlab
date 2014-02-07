@@ -1,5 +1,7 @@
 ###
-### ROSSER.R - Returns the Rosser matrix
+### $Id: rosser.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Returns the Rosser matrix.
 ###
 
 

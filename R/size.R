@@ -1,8 +1,8 @@
 ###
-### SIZE.R - Array dimensions
+### $Id: size.R 48 2014-02-05 20:50:54Z plroebuck $
 ###
-
-library(methods)
+### Array dimensions.
+###
 
 
 ##-----------------------------------------------------------------------------

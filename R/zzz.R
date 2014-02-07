@@ -1,5 +1,7 @@
 ###
-### ZZZ.R
+### $Id: zzz.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Hooks called as package is loaded, attached, detatched, and unloaded.
 ###
 
 
@@ -41,10 +43,6 @@
 
 ##-----------------------------------------------------------------------------
 .onLoad <- function(libname, pkgname) {
-    ## In case namespace is loaded (via import) by package that doesn't depend
-    ## on S4 methods and used in a session with non-default set of packages
-    require(methods)
-
     ## Create environment for internal usage
     environment(.MatlabNamespaceEnv) <- asNamespace("matlab")
 

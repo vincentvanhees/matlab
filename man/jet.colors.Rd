@@ -1,3 +1,5 @@
+% $Id: jet.colors.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{jet.colors}
 \alias{jet.colors}
 \title{MATLAB jet function}

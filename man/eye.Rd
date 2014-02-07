@@ -1,3 +1,5 @@
+% $Id: eye.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{eye}
 \alias{eye}
 \title{MATLAB eye function}

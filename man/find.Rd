@@ -1,3 +1,5 @@
+% $Id: find.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{find}
 \alias{find}
 \title{MATLAB find function}

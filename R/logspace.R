@@ -1,5 +1,7 @@
 ###
-### LOGSPACE.R - Generate logarithmically spaced vectors
+### $Id: logspace.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Generate logarithmically spaced vectors.
 ###
 
 

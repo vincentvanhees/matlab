@@ -1,12 +1,14 @@
 ###
-### ZEROS.R - Create a matrix of all zeros
+### $Id: zeros.R 55 2014-02-06 16:41:28Z plroebuck $
+###
+### Create a matrix of all zeros.
 ###
 
 
 ##-----------------------------------------------------------------------------
 zeros <- function(...) {
     nargs <- length(dots <- list(...))
-    dims <- as.integer(if (nargs == 1 && matlab:::is.size_t(dots[[1]])) {
+    dims <- as.integer(if (nargs == 1 && is.size_t(dots[[1]])) {
                            dots[[1]]
                        } else {
                            unlist(dots)

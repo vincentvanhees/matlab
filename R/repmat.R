@@ -1,12 +1,14 @@
 ###
-### REPMAT.R - Replicate and tile an array
+### $Id: repmat.R 55 2014-02-06 16:41:28Z plroebuck $
+###
+### Replicate and tile an array.
 ###
 
 
 ##-----------------------------------------------------------------------------
 repmat <- function(A, ...) {
     nargs <- length(dots <- list(...))
-    dims <- as.integer(if (nargs == 1 && matlab:::is.size_t(dots[[1]])) {
+    dims <- as.integer(if (nargs == 1 && is.size_t(dots[[1]])) {
                            dots[[1]]
                        } else {
                            unlist(dots)

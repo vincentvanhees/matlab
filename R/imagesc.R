@@ -1,6 +1,8 @@
 ###
-### IMAGESC.R - Displays matrix C as an image with its data scaled to use the
-###             full color palette.
+### $Id: imagesc.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Displays matrix C as an image with its data scaled to use the full
+### color palette.
 ###
 
 

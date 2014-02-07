@@ -1,5 +1,7 @@
 ###
-### NUMEL.R - Provides number of elements
+### $Id: numel.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Provides number of elements.
 ###
 
 

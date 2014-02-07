@@ -1,5 +1,7 @@
 ###
-### HILB.R - Hilbert matrix
+### $Id: hilb.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Hilbert matrix.
 ###
 
 

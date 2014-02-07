@@ -1,3 +1,5 @@
+% $Id: magic.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{magic}
 \alias{magic}
 \title{MATLAB magic function}

@@ -1,3 +1,5 @@
+% $Id: cell.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{cell}
 \alias{cell}
 \title{MATLAB cell function}

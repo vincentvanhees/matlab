@@ -1,5 +1,7 @@
 ###
-### REM.R - Remainder after division
+### $Id: rem.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Remainder after division.
 ###
 
 

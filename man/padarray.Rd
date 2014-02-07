@@ -1,3 +1,5 @@
+% $Id: padarray.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{padarray}
 \alias{padarray}
 \alias{padarray,array,numeric,missing,missing-method}

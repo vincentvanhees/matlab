@@ -1,5 +1,7 @@
 ###
-### ISEMPTY.R - Determine if object is  empty
+### $Id: isempty.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Determine if object is empty.
 ###
 
 

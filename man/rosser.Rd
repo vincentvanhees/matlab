@@ -1,3 +1,5 @@
+% $Id: rosser.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{rosser}
 \alias{rosser}
 \title{MATLAB rosser function}

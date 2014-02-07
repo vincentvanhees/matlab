@@ -1,3 +1,5 @@
+% $Id: fliplr.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{fliplr}
 \alias{fliplr}
 \alias{fliplr,ANY-method}

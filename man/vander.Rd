@@ -1,3 +1,5 @@
+% $Id: vander.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{vander}
 \alias{vander}
 \title{MATLAB vander function}

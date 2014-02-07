@@ -1,3 +1,5 @@
+% $Id: multiline.plot.colors.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{multiline.plot.colors}
 \alias{multiline.plot.colors}
 \title{MATLAB multiline plot colors}

@@ -1,5 +1,7 @@
 ###
-### COLORBAR.R - Displays colorbar showing the color scale
+### $Id: colorbar.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Displays colorbar showing the color scale.
 ###
 
 SIDE.BELOW <- as.integer(1)

@@ -1,7 +1,8 @@
 ###
-### JET.COLORS.R - Create a vector of colors beginning with dark blue, ranging
-###                through shades of blue, cyan, green, yellow and red, and
-###                ending with dark red.
+### $Id: jet.colors.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Create a vector of colors beginning with dark blue, ranging through
+### shades of blue, cyan, green, yellow and red, and ending with dark red.
 ###
 
 DEFAULT.COLORMAP.SIZE <- 64

@@ -1,5 +1,7 @@
 ###
-### PRIMES.R - Generate list of prime numbers
+### $Id: primes.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Generate list of prime numbers.
 ###
 
 

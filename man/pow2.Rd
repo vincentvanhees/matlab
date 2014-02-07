@@ -1,3 +1,5 @@
+% $Id: pow2.Rd 50 2014-02-05 21:15:00Z plroebuck $
+
 \name{pow2}
 \alias{pow2}
 \title{MATLAB pow2 function}

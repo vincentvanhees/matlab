@@ -1,5 +1,7 @@
 ###
-### TICTOC.R - Stopwatch timer
+### $Id: tictoc.R 48 2014-02-05 20:50:54Z plroebuck $
+###
+### Stopwatch timer.
 ###
 
 
