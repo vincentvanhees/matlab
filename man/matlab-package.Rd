@@ -1,4 +1,4 @@
-% $Id: matlab-package.Rd 57 2014-02-08 00:53:24Z plroebuck $
+% $Id: matlab-package.Rd 59 2014-06-19 19:28:40Z plroebuck $
 
 \name{matlab-package}
 \alias{matlab-package}
@@ -11,15 +11,15 @@
 \details{
   \tabular{ll}{
     Package: \tab matlab\cr
-    Type: \tab Package\cr
-    Version: \tab 1.0.1\cr
-    Date: \tab 2014-02-07\cr
-    License: \tab Artistic-2.0\cr
+    Type:    \tab Package\cr
+    Version: \tab \Sexpr[results=text]{packageDescription("matlab")$Version}\cr
+    Date:    \tab \Sexpr[results=text]{packageDescription("matlab")$Date}\cr
+    License: \tab \Sexpr[results=text]{packageDescription("matlab")$License}\cr
   }
   They are no more complete than absolutely necessary and are quite
   possibly broken for fringe cases.
 
-  For a complete list of functions, use \code{library(help="matlab")}.
+  For a complete list of functions, use \code{library(help="matlab")}.\cr
   For a high-level summary of the changes for each revision, use
     \code{file.show(system.file("NEWS", package="matlab"))}.
 }
