@@ -10,7 +10,7 @@ Authors@R: c(person("Paul","Roebuck",role=c("aut"),
 Description: Emulate MATLAB Code Using R.
 Depends: R (>= 2.15)
 Imports: methods, graphics
-URL: http://cran.r-project.org/package=matlab
+URL: https://cran.r-project.org/package=matlab
 License: Artistic-2.0
 Copyright: file COPYRIGHTS
 LazyLoad: true
