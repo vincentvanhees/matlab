@@ -53,3 +53,6 @@ exportMethods(padarray)
 exportMethods(size)
 exportMethods(sum)
 
+ importFrom("grDevices", "rgb")
+ importFrom("graphics", "axTicks", "axis", "box", "par")
+ importFrom("stats", "sd")
