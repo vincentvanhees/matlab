@@ -1,6 +1,6 @@
 Package: matlab
 Version: 1.0.3
-Date: 2022-05-11
+Date: 2022-05-20
 Title: MATLAB emulation package
 Maintainer: Vincent T van Hees <v.vanhees@accelting.com>
 Authors@R: c(person("Paul","Roebuck",role=c("aut"),
