@@ -11,7 +11,14 @@
 
 NEW FEATURES
 
-    o   Function rem updated to make it compatible with R 4.2.0 which does not allow for logical comparisons with length greater than one. CRAN announced on the 11th of May 2022 to archive matlab and all its 27 direct- and indirect reverse dependencies because of not meeting this R 4.2.0 condition. Therefore, Vincent van Hees stepped in as temporary maintainer using https://github.com/vincentvanhees/matlab as code base. The current release is only intended to prevent the announced archival of matlab and all its reverse dependencies. Ideally, Paul Roebuck, will take back control with a new release in upcoming months. 
+
+    o   Updated DESCRIPTION file with minor corrections and updated email.
+
+    o   Added imports to the NAMESPACE file as suggested by R CMD check.
+
+    o   Modified rem() method to handle || change coming in upcoming R version
+        that was causing an error.
+
 
 
                 CHANGES IN R VERSION 1.0.2
