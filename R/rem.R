@@ -12,14 +12,9 @@ rem <- function(x, y) {
     x = -x
     y = -y
   }
-  negativeX = which(x < 0)
   ans = abs(x) %% y
-  if (length(negativeX) > 0) {
-    ans[negativeX] = -ans[negativeX]
-  }
-  if (flip ==  TRUE) {
-    ans = -ans
-  }
+  ans = ifelse(test = x < 0, yes = -ans, no = ans)
+  if (flip ==  TRUE) ans = -ans
   return(ans)
 }
 
