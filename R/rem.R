@@ -7,12 +7,19 @@
 
 ##-----------------------------------------------------------------------------
 rem <- function(x, y) {
-    ans <- matlab::mod(x, y)
-    if (!((any(x > 0) && y > 0) ||
-          (any(x < 0) && y < 0))) {
-        ans <- ans - y
-    }
-
-    return(ans)
+  flip = ifelse(test = y < 0, yes = TRUE, no = FALSE)
+  if (flip ==  TRUE) {
+    x = -x
+    y = -y
+  }
+  negativeX = which(x < 0)
+  ans = abs(x) %% y
+  if (length(negativeX) > 0) {
+    ans[negativeX] = -ans[negativeX]
+  }
+  if (flip ==  TRUE) {
+    ans = -ans
+  }
+  return(ans)
 }
 

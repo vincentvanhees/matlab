@@ -40,7 +40,6 @@
     }
 }
 
-
 ##-----------------------------------------------------------------------------
 .onLoad <- function(libname, pkgname) {
     ## Create environment for internal usage
@@ -50,9 +49,6 @@
     assign("savedTime", 0, envir=.MatlabNamespaceEnv)
 
     ## Allow no changes or additions to environment
-    lockEnvironment(.MatlabNamespaceEnv, bindings=TRUE)
-
-    ## Only allow internal vars to change
-    unlockBinding("savedTime", .MatlabNamespaceEnv)
+    lockEnvironment(.MatlabNamespaceEnv)
 }
 
